@@ -274,10 +274,10 @@ export default function PrivacyPage() {
               </h3>
               <div className="bg-emerald-50 border border-emerald-200 rounded-xl p-6 mb-6">
                 <p className="text-emerald-700">
-                  All financial structure data is stored on servers located
-                  within Australia (Sydney, ap-southeast-2 region). Your
-                  sensitive financial information never leaves Australian
-                  jurisdiction.
+                  Production application data is provisioned in the Australian
+                  region. This supports Australian data-residency expectations
+                  while specific hosting and subprocessors are governed by our
+                  policies and service terms.
                 </p>
               </div>
 

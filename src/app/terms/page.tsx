@@ -526,9 +526,10 @@ export default function TermsPage() {
                   Australian Data Residency
                 </h4>
                 <p className="text-emerald-700">
-                  All financial structure data is stored on servers located
-                  within Australia (Sydney region). Your sensitive financial
-                  information never leaves Australian jurisdiction.
+                  Production application data is provisioned in the Australian
+                  region. Specific hosting, subprocessors, and data handling are
+                  governed by our Privacy Policy, this Agreement, and applicable
+                  service terms.
                 </p>
               </div>
 

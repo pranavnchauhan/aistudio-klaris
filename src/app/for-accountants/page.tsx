@@ -62,10 +62,10 @@ const faqItems: FaqItem[] = [
     ],
   },
   {
-    question: "What does the one-month trial involve?",
+    question: "What does a pilot or demo involve?",
     answer: [
-      "For qualified accounting and advisory firms, we offer a free one-month trial so you can see Klaris with real client structures before you commit.",
-      "You select a small set of representative client groups, we help you apply the KRSP Framework to build their structure maps, and you can see how much time and friction that removes from your next round of reviews.",
+      "For qualified accounting and advisory firms, we can run a guided demo or pilot so you can see Klaris with representative client structures before committing.",
+      "You select a small set of representative client groups, we help you apply the KRSP Framework to build their structure maps, and you can see how much time and friction that removes from your next round of reviews. Pricing and rollout terms are confirmed before any production onboarding.",
     ],
   },
 ];
@@ -155,7 +155,7 @@ export default function ForAccountantsPage() {
                 rel="noopener noreferrer"
               >
                 <Calendar className="mr-2 h-4 w-4" />
-                Book a free 1-month trial for your firm
+                Book a guided demo for your firm
               </a>
             </Button>
           </div>
@@ -228,9 +228,9 @@ export default function ForAccountantsPage() {
               <li className="flex items-start gap-3">
                 <span className="mt-1.5 h-2 w-2 rounded-full bg-primary shrink-0" />
                 <span className="text-muted-foreground">
-                  Focused on Australian structures: discretionary and unit
-                  trusts, companies, SMSFs, inter-entity loans, testamentary
-                  trusts, beneficiaries, and controllers.
+                  Focused on Australian structures: family and unit
+                  trusts, companies, SMSFs, partnerships, personal holdings,
+                  assets, loans, beneficiaries, trustees, directors, and shareholders.
                 </span>
               </li>
               <li className="flex items-start gap-3">
@@ -244,9 +244,9 @@ export default function ForAccountantsPage() {
               <li className="flex items-start gap-3">
                 <span className="mt-1.5 h-2 w-2 rounded-full bg-primary shrink-0" />
                 <span className="text-muted-foreground">
-                  B2B2C by design: your firm licenses Klaris, you bring it to
-                  your high net worth clients as part of your service, not the
-                  other way around.
+                  Flexible rollout by design: clients can request access directly,
+                  while firms and advisors can sponsor or manage client accounts
+                  as part of their service model.
                 </span>
               </li>
             </ul>
@@ -360,7 +360,7 @@ export default function ForAccountantsPage() {
                 Australian hosting and data residency
               </h3>
               <p className="text-sm text-muted-foreground text-center">
-                Production data is hosted in Australian data centres so client
+                Production data is provisioned in the Australian region so client
                 information remains within Australian jurisdiction. This
                 supports your obligations under the Australian Privacy Act and
                 your own internal data residency policies.
@@ -433,13 +433,12 @@ export default function ForAccountantsPage() {
                 2. Built for multi-advisor collaboration
               </h3>
               <p className="text-muted-foreground mb-3">
-                Klaris supports collaboration between accountants, financial
-                advisers, lawyers, and the family where appropriate.
+                Klaris supports controlled collaboration between clients and
+                trusted advisors where appropriate.
               </p>
               <p className="text-muted-foreground">
-                You control who is invited into each structure and what they can
-                see, so you can bring other professionals into the picture
-                without losing control of the relationship.
+                Clients can invite advisors with view-only or full-access permissions,
+                and advisor-sponsored client accounts are supported for firm-led rollouts.
               </p>
             </div>
 
@@ -603,7 +602,7 @@ export default function ForAccountantsPage() {
               rel="noopener noreferrer"
             >
               <Calendar className="mr-2 h-4 w-4" />
-              Book a free 1-month trial for your firm
+              Book a guided demo for your firm
             </a>
           </Button>
           <p className="mt-4 text-sm text-primary-foreground/60 max-w-xl mx-auto text-center">

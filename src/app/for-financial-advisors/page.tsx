@@ -63,10 +63,10 @@ const faqItems: FaqItem[] = [
   },
   {
     question:
-      "What does the free one-month trial involve for our practice?",
+      "What does a guided demo or pilot involve for our practice?",
     answer: [
-      "For qualified advisory practices, Klaris offers a free one-month trial so you can see it in use with real client structures.",
-      "You choose a small set of representative high net worth clients, we help you build their structure maps using the KRSP Framework, and you can see how that changes review preparation and client conversations before you make any long-term commitment.",
+      "For qualified advisory practices, Klaris offers a guided demo or pilot so you can see it in use with representative client structures.",
+      "You choose a small set of representative high net worth clients, we help you build their structure maps using the KRSP Framework, and you can see how that changes review preparation and client conversations before you make any long-term commitment. Pricing and advisor licensing are confirmed before rollout.",
     ],
   },
 ];
@@ -156,7 +156,7 @@ export default function ForFinancialAdvisorsPage() {
                 rel="noopener noreferrer"
               >
                 <Calendar className="mr-2 h-4 w-4" />
-                Book a free 1-month trial for your practice
+                Book a guided demo for your practice
               </a>
             </Button>
           </div>
@@ -212,8 +212,8 @@ export default function ForFinancialAdvisorsPage() {
             <p className="text-muted-foreground mb-4 text-center">
               Klaris is wealth structure visualisation software built in
               Australia for financial advisors and advisory practices who work
-              with SMSFs, discretionary trusts, testamentary trusts, and complex
-              corporate structures. You remain the advice provider; Klaris helps
+              with SMSFs, family trusts, unit trusts, companies, partnerships,
+              personal holdings, assets, and loans. You remain the advice provider; Klaris helps
               you show clients what their world actually looks like.
             </p>
           </div>
@@ -226,9 +226,9 @@ export default function ForFinancialAdvisorsPage() {
               <li className="flex items-start gap-3">
                 <span className="mt-1.5 h-2 w-2 rounded-full bg-primary shrink-0" />
                 <span className="text-muted-foreground">
-                  Works with the structures you use daily: SMSFs, discretionary
-                  trusts, unit trusts, testamentary trusts, companies, and
-                  personal entities.
+                  Works with the structures you use daily: SMSFs, family trusts,
+                  unit trusts, companies, partnerships, personal holdings, assets,
+                  and loans.
                 </span>
               </li>
               <li className="flex items-start gap-3">
@@ -241,9 +241,9 @@ export default function ForFinancialAdvisorsPage() {
               <li className="flex items-start gap-3">
                 <span className="mt-1.5 h-2 w-2 rounded-full bg-primary shrink-0" />
                 <span className="text-muted-foreground">
-                  B2B2C by design: your practice licenses Klaris, you use it
-                  with your high net worth clients as part of your review and
-                  strategy process.
+                  Flexible rollout by design: clients can invite you with controlled
+                  permissions, and your practice can create or sponsor client
+                  accounts where that suits your service model.
                 </span>
               </li>
             </ul>
@@ -366,17 +366,16 @@ export default function ForFinancialAdvisorsPage() {
             {/* Feature 2 */}
             <div>
               <h3 className="text-xl font-semibold text-primary mb-3">
-                2. Support for discretionary and testamentary trust planning
+                2. Support for trust and entity review conversations
               </h3>
               <p className="text-muted-foreground mb-3">
-                For clients with discretionary and testamentary trusts, Klaris
-                helps you make the structure tangible.
+                For clients with family trusts, unit trusts, companies, SMSFs,
+                partnerships, or personal holdings, Klaris helps you make the structure tangible.
               </p>
               <p className="text-muted-foreground">
-                You can map trustees, appointors, beneficiaries, and key control
-                mechanisms so that discussions about family protection,
-                flexibility, and succession are based on a clear picture rather
-                than abstract descriptions.
+                You can map trustees, beneficiaries, directors, shareholders, members,
+                assets, and loans so review discussions are based on a clear
+                picture rather than abstract descriptions.
               </p>
             </div>
 
@@ -506,8 +505,8 @@ export default function ForFinancialAdvisorsPage() {
           </h2>
           <div className="max-w-2xl mx-auto text-primary-foreground/80 mb-8">
             <p className="mb-4 text-center">
-              Your clients trust you with their SMSFs, their family trusts,
-              their testamentary arrangements, and their personal wealth. Klaris
+              Your clients trust you with their SMSFs, family trusts, companies,
+              assets, liabilities, and personal wealth. Klaris
               helps you show them the structures you already understand in a way
               that is clear, accurate, and practical for decision making.
             </p>
@@ -541,7 +540,7 @@ export default function ForFinancialAdvisorsPage() {
               rel="noopener noreferrer"
             >
               <Calendar className="mr-2 h-4 w-4" />
-              Book a free 1-month trial for your practice
+              Book a guided demo for your practice
             </a>
           </Button>
           <p className="mt-4 text-sm text-primary-foreground/60 max-w-xl mx-auto text-center">

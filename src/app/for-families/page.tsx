@@ -45,13 +45,13 @@ const faqItems: FaqItem[] = [
   {
     question: "How does my family get access to Klaris?",
     answer:
-      "Klaris is introduced to families through their accountant or financial adviser. Your adviser sets up the wealth structure map and invites family members with appropriate access. If your adviser does not yet use Klaris, contact us and we can discuss the best way to get started.",
+      "Families can request access directly or be invited by an advisor using Klaris. During rollout, new accounts may require review before full access is activated. If your advisor does not yet use Klaris, contact us and we can discuss the best way to get started.",
   },
   {
     question:
       "Can I see everything in my family's structure, or only certain parts?",
     answer:
-      "Your accountant or adviser controls access levels. Each family member sees what is appropriate for their role - a successor might see the full structure, while a younger family member might see a summary view. Access is managed through roles and permissions.",
+      "Klaris currently supports client and advisor access. Clients can invite trusted advisors with view-only or full-access permissions; broader family access should be planned with your advisor as the platform rollout expands.",
   },
   {
     question: "Does Klaris give financial or legal advice?",
@@ -61,7 +61,7 @@ const faqItems: FaqItem[] = [
   {
     question: "Is our family's financial information secure?",
     answer:
-      "Yes. All data is encrypted in transit and at rest, stored in Australian data centres, and protected with role-based access controls. Klaris is designed with the Australian Privacy Act and the Australian Privacy Principles in mind.",
+      "Klaris protects traffic with HTTPS/TLS, encrypts sensitive identifiers such as ABN, ACN, and bank details, and uses role-based access controls, Supabase row-level security, and advisor access revocation. Klaris is designed with Australian privacy obligations in mind.",
   },
   {
     question: "What if our accountant or adviser doesn't use Klaris yet?",
@@ -100,7 +100,7 @@ export default function ForFamiliesPage() {
     audience: {
       "@type": "Audience",
       audienceType:
-        "High net worth Australian families, successors, and family decision-makers",
+        "High net worth Australian families and family decision-makers",
     },
     breadcrumb: {
       "@type": "BreadcrumbList",
@@ -238,8 +238,8 @@ export default function ForFamiliesPage() {
                 Who controls what
               </h3>
               <p className="text-sm text-muted-foreground text-center">
-                Directors, trustees, appointors, and beneficial owners shown
-                clearly.
+                Directors, trustees, shareholders, members, beneficiaries, and
+                asset owners recorded clearly.
               </p>
             </div>
             <div className="space-y-3">
@@ -259,11 +259,11 @@ export default function ForFamiliesPage() {
                 <GlowingIcon icon={Shield} color="violet" size="sm" />
               </div>
               <h3 className="text-base font-semibold text-primary text-center">
-                Estate planning components
+                Supporting records
               </h3>
               <p className="text-sm text-muted-foreground text-center">
-                Testamentary trusts, backup beneficiaries, and other estate
-                planning elements included.
+                Documents, beneficiary details, structure parties, assets,
+                and loans recorded for clearer advisor discussions.
               </p>
             </div>
             <div className="space-y-3">
@@ -274,8 +274,8 @@ export default function ForFamiliesPage() {
                 Shared access for the whole family
               </h3>
               <p className="text-sm text-muted-foreground text-center">
-                Invite successors and relevant family members with appropriate
-                access levels.
+                Invite trusted advisors with view-only or full-access permissions.
+                Broader family access should be handled through your rollout plan.
               </p>
             </div>
           </div>
@@ -296,14 +296,14 @@ export default function ForFamiliesPage() {
             why decisions were made.
           </p>
           <p className="text-muted-foreground mb-6">
-            Klaris gives successors a clear picture of the family wealth
-            structure before a major event forces the conversation. That
-            preparation reduces confusion, builds confidence, and makes
-            transitions far smoother for everyone involved.
+            Klaris gives families and their advisors a clearer record of the family
+            wealth structure before a major event forces the conversation. That
+            preparation reduces confusion and gives successors better material to
+            review with qualified professionals.
           </p>
           <p className="text-muted-foreground">
-            Your accountant or adviser controls what each family member can see,
-            so access is always appropriate to the situation.
+            Clients control advisor access in the app, and any broader family rollout
+            should be planned carefully with your professional advisors.
           </p>
         </div>
       </section>
@@ -316,9 +316,9 @@ export default function ForFamiliesPage() {
           </h2>
           <p className="text-muted-foreground mb-6">
             Klaris is designed to sit alongside your existing advisory
-            relationships. Your accountant, financial adviser, and solicitor can
-            all work from the same wealth structure map where appropriate, so
-            everyone is working from the same information.
+            relationships. Your accountant or financial adviser can work from the same wealth
+            structure map where appropriate, so key advisors are working from the
+            same information.
           </p>
           <p className="text-muted-foreground mb-6">
             This reduces the risk of gaps - situations where one adviser does
@@ -327,7 +327,7 @@ export default function ForFamiliesPage() {
             already up to date before the meeting starts.
           </p>
           <p className="text-muted-foreground">
-            Klaris is introduced and managed through your professional firm. If
+            Klaris can be used directly by clients or alongside your professional firm. If
             your accountant or adviser does not yet use Klaris, you can{" "}
             <Link
               href="/for-accountants"
@@ -361,9 +361,9 @@ export default function ForFamiliesPage() {
             for the Australian market.
           </p>
           <p className="text-muted-foreground">
-            Your data is stored in Australian data centres and managed under the
-            Australian Privacy Act. Klaris is operated by Krrisp Pty Ltd (ABN
-            38 609 221 570), an Australian company.
+            Production data is provisioned in the Australian region and managed with
+            Australian privacy obligations in mind. Klaris is operated by Krrisp
+            Pty Ltd (ABN 38 609 221 570), an Australian company.
           </p>
         </div>
       </section>
@@ -411,9 +411,9 @@ export default function ForFamiliesPage() {
             Ready to see your family wealth structure clearly?
           </h2>
           <p className="text-lg text-primary-foreground/80 mb-8 max-w-2xl mx-auto text-center">
-            Talk to us about how Klaris can give your family a single, clear map
-            of everything you hold. We work through your existing accounting or
-            advisory firm, or we can connect you with a firm that uses Klaris.
+            Talk to us about how Klaris can give your family a clearer map of
+            structures, assets, loans, and documents. You can request access
+            directly or use Klaris alongside your existing accounting or advisory firm.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Button size="lg" variant="secondary" asChild>

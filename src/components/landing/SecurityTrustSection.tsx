@@ -10,21 +10,21 @@ const securityFeatures: { icon: typeof Shield; title: string; description: strin
     icon: Shield,
     title: "AES-256 Encryption",
     description:
-      "Your data is encrypted at rest and in transit using AES-256, the same standard used by banks and government agencies.",
+      "Traffic is protected with HTTPS/TLS, and sensitive identifiers such as ABN, ACN, and bank details are encrypted before storage.",
     color: "blue",
   },
   {
     icon: Key,
     title: "Privacy Act Compliant",
     description:
-      "Klaris is built to comply with the Australian Privacy Act and Australian Privacy Principles (APPs). Your data stays yours.",
+      "Klaris is designed with Australian privacy obligations in mind, including explicit advisor access controls and revocation.",
     color: "amber",
   },
   {
     icon: MapPin,
     title: "Australian Data Residency",
     description:
-      "All data is stored on Australian servers. Your financial information never leaves the country.",
+      "Production data is provisioned in the Australian region, with Supabase row-level security and masked views controlling access.",
     color: "emerald",
   },
 ];
@@ -81,10 +81,9 @@ export default function SecurityTrustSection() {
             Zero Routine Staff Visibility
           </h3>
           <p className="text-muted-foreground max-w-xl mx-auto leading-relaxed text-center">
-            Our systems are designed so that Klaris staff do not have routine access to your wealth
-            structures. When you request support that requires data access, this is strictly opt-in
-            and fully audit-logged. In the event of a technical incident, our response team may access
-            the minimum data necessary to resolve the issue, subject to our Data Breach Notification procedures.
+            Klaris uses admin role checks and audit logs for sensitive operational actions.
+            Admin client data view-ins are logged, and routine support should not require access
+            to your wealth records unless a support issue specifically needs it.
           </p>
         </div>
       </div>

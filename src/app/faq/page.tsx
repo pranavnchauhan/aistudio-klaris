@@ -56,7 +56,7 @@ const faqSections: FaqSection[] = [
       {
         question: "Who is Klaris designed for?",
         answer: [
-          "Klaris is designed for Australian accountants and financial advisers who serve high net worth clients and complex family groups. It is a B2B2C model: you use Klaris inside your firm and roll it out to your high net worth clients as part of your service.",
+          "Klaris is designed for Australian accountants, financial advisers, and clients working with high net worth or complex family groups. Firms can use Klaris inside their practice and sponsor client accounts, while clients can also request access directly during the controlled rollout.",
         ],
       },
       {
@@ -87,14 +87,14 @@ const faqSections: FaqSection[] = [
       {
         question: "What types of structures can I visualise with Klaris?",
         answer: [
-          "You can map Australian discretionary and unit trusts, companies, SMSFs, individual holdings, inter-entity loans, and key estate-planning components such as testamentary trusts and backup beneficiaries. The platform is built around Australian tax and trust concepts, not generic global templates.",
+          "You can map Australian discretionary and unit trusts, companies, SMSFs, personal or individual holdings, assets, loans, and linked documents. The platform is built around Australian structure types, not generic global templates.",
         ],
       },
       {
         question:
           "Can multiple advisers and firms collaborate on the same client structures?",
         answer: [
-          "Yes. Klaris is designed for multi-advisor collaboration, so accountants, financial advisers, lawyers, and the family can all work from the same wealth structure view where appropriate. You control access through roles and permissions, so each party only sees what they should.",
+          "Yes. Klaris supports controlled advisor collaboration. Clients can invite trusted advisors with view-only or full-access permissions, and advisor-sponsored client accounts are supported. Broader family or legal-team access should be planned during onboarding.",
         ],
       },
       {
@@ -119,14 +119,14 @@ const faqSections: FaqSection[] = [
       {
         question: "Where is Klaris hosted and where is data stored?",
         answer: [
-          "Klaris production data is hosted in Australian data centres, so client information remains within Australian jurisdiction. This aligns with expectations around data residency for professional services firms working under Australian law.",
+          "Klaris production data is provisioned in the Australian region. This supports data-residency expectations for Australian professional services firms, while specific hosting and subprocessors are described in our policies and service terms.",
         ],
       },
       {
         question:
           "How does Klaris secure sensitive financial and personal information?",
         answer: [
-          "All connections to Klaris are encrypted in transit with modern TLS, and data is encrypted at rest using industry-standard algorithms. Access is protected with strong authentication and role-based permissions so only authorised users inside your firm and client group can see structures.",
+          "Connections to Klaris are encrypted in transit with modern TLS. Sensitive identifiers such as ABN, ACN, and bank details are encrypted before storage, and access is protected with authentication, Supabase row-level security, masked advisor views, and explicit advisor permissions.",
         ],
       },
       {
@@ -171,20 +171,20 @@ const faqSections: FaqSection[] = [
       {
         question: "Do high net worth clients sign up directly with Klaris?",
         answer: [
-          "Today Klaris is offered through professional firms, not as a direct-to-consumer subscription. You bring Klaris to your clients as part of your service, and we support you in designing how it fits into your engagements.",
+          "Klaris supports both direct client accounts and advisor-sponsored clients. During rollout, new accounts may require admin review, and firms can bring Klaris to clients as part of their service model.",
         ],
       },
       {
-        question: "Can families and successors get their own logins?",
+        question: "Can family members and successors use Klaris?",
         answer: [
-          "Yes. You can invite selected family members into Klaris with appropriate access levels so successors and decision-makers can understand the structure ahead of major events. That reduces confusion and stress when those events occur.",
+          "The live app currently focuses on client, advisor, and admin roles. Families can use Klaris through the client account and trusted advisor access workflows; broader family-member access should be planned with Klaris during onboarding.",
         ],
       },
       {
         question:
           "What problems does Klaris solve for high net worth families?",
         answer: [
-          "For families, Klaris reduces the fog around structures by replacing scattered documents with a single, visual wealth map. That clarity supports better estate planning, smoother handovers, and more confident decision-making with their advisers.",
+          "For families, Klaris reduces the fog around structures by replacing scattered documents with a single visual record of structures, assets, loans, and linked documents. That clarity supports more informed conversations with advisers about estate planning, handovers, and future decisions.",
         ],
       },
     ],
@@ -195,14 +195,14 @@ const faqSections: FaqSection[] = [
       {
         question: "How does Klaris pricing work for firms?",
         answer: [
-          "Klaris uses custom pricing based on how many client structures you onboard and how complex those structures are. This means a firm with a small number of very complex groups and a firm with many simpler groups can both have pricing that reflects their real usage.",
+          "Klaris pricing is confirmed during onboarding based on the rollout model, direct client subscriptions, advisor-sponsored access, and the number and complexity of client groups involved.",
         ],
       },
       {
         question:
           "Do you have special pricing for accountants and advisers?",
         answer: [
-          "Yes. Klaris is built to be delivered through accountants and financial advisers, so we offer partnership-oriented pricing for firms that roll Klaris out to their high net worth client base. Qualified accounting and advisory firms can also access a one-month free trial so you can see Klaris with real client structures before committing.",
+          "Yes. Klaris is built to work with accountants and financial advisers, including advisor-sponsored client access. We discuss partnership-oriented pricing, pilots, and rollout terms directly with qualified firms before production onboarding.",
         ],
       },
       {
@@ -215,7 +215,7 @@ const faqSections: FaqSection[] = [
       {
         question: "How do we discuss pricing and next steps?",
         answer: [
-          "The best way to discuss pricing is to book a short session where we look at the number and complexity of client groups you might onboard. We then propose structure-based pricing that reflects the time and risk reduction Klaris can create in your practice.",
+          "The best way to discuss pricing is to book a short session where we review your rollout model, client groups, and advisor/client access needs. We then confirm pricing and onboarding terms before production use.",
         ],
       },
     ],
@@ -232,7 +232,7 @@ const faqSections: FaqSection[] = [
       {
         question: "How can we see Klaris in action before committing?",
         answer: [
-          "You can book a personalised demo using anonymised examples or high-level versions of your own client structures. During your one-month trial, we help you apply the KRSP Framework across a small set of client groups so your team can feel the difference in clarity and review time.",
+          "You can book a personalised demo using anonymised examples or high-level versions of your own client structures. For pilots, we help you apply the KRSP Framework across a small set of client groups so your team can evaluate clarity and review time before rollout.",
         ],
       },
     ],

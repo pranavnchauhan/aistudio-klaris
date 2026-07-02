@@ -6,10 +6,10 @@ import { useInView } from "@/hooks/use-in-view";
 
 const benefits = [
   "Full wealth structure mapping",
-  "Unlimited entities and assets",
+  "Structures, assets, loans, and linked documents",
   "Interactive visual dashboard",
   "Secure document storage",
-  "Export-ready reports",
+  "Export reports and controlled advisor sharing",
   "Priority support",
 ];
 
@@ -32,7 +32,7 @@ export default function PricingSection() {
           </h2>
           <p className="text-muted-foreground mb-10 text-center">
             Book a personalised demo to see how Klaris can map your wealth structure.
-            Pricing is tailored to your needs.
+            Pricing and advisor licensing are confirmed with your firm during onboarding.
           </p>
         </div>
 
@@ -64,7 +64,7 @@ export default function PricingSection() {
           </Button>
 
           <p className="mt-4 text-center text-xs text-muted-foreground">
-            Volume licensing available for accounting firms and advisory practices.
+            Direct client subscriptions and advisor-sponsored access are supported in the app; firm pricing is confirmed before rollout.
           </p>
         </div>
       </div>

@@ -8,7 +8,7 @@ import { Button } from "@/components/ui/button";
 export const metadata: Metadata = {
   title: "About",
   description:
-    "Klaris AI is Australia's trusted wealth planning software and financial structure visualizer. Founded by Pranav Chauhan.",
+    "Klaris AI is Australian wealth structure visualisation software for mapping structures, assets, loans, documents, and advisor access.",
   keywords: [
     "klaris AI",
     "wealth planning software Australia",
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "About | Klaris",
     description:
-      "Klaris AI is Australia's trusted wealth planning software and financial structure visualizer. Founded by Pranav Chauhan.",
+      "Klaris AI is Australian wealth structure visualisation software for mapping structures, assets, loans, documents, and advisor access.",
     url: "https://klaris.com.au/about",
   },
 };
@@ -31,7 +31,7 @@ export default function AboutPage() {
     url: "https://klaris.com.au",
     logo: "https://klaris.com.au/klaris-logo.webp",
     description:
-      "Australia's trusted wealth planning software and financial structure visualizer.",
+      "Australian wealth structure visualisation software for mapping structures, assets, loans, documents, and advisor access.",
     founder: {
       "@type": "Person",
       name: "Pranav Chauhan",
@@ -71,9 +71,9 @@ export default function AboutPage() {
             Klaris AI. The End of Financial Blind Spots.
           </h1>
           <p className="mt-6 text-lg text-muted-foreground max-w-2xl mx-auto text-center">
-            We believe every Australian family deserves complete visibility over their
-            financial world: trusts, entities, assets, and estate plans, all in one
-            secure, intelligent platform.
+            We believe Australian families and advisors need a clearer way to record
+            structures, assets, loans, and documents, then work from one controlled
+            source of truth.
           </p>
         </div>
       </section>
@@ -208,11 +208,10 @@ export default function AboutPage() {
                 The Klaris Solution
               </h3>
               <p className="text-muted-foreground">
-                Klaris maps your entire financial structure in one intelligent,
-                interactive graph. Trusts, entities, ownership chains, assets, and
-                estate plans, all visible, all connected, all secure. Advisors and
-                family members collaborate in real time, with role-based access that
-                keeps sensitive information protected.
+                Klaris maps ownership structures, assets, loans, and supporting documents
+                in one interactive workspace. Clients can invite trusted advisors with
+                view-only or full-access permissions, while admin approval and audit
+                controls support a controlled rollout.
               </p>
             </div>
           </div>
@@ -234,9 +233,9 @@ export default function AboutPage() {
                 Local Context
               </h3>
               <p className="text-sm text-muted-foreground text-center">
-                Built for Australian tax law, trust structures, SMSF rules, and estate
-                planning requirements. Not a US product adapted for AU. Klaris is
-                Australian from the ground up.
+                Built around Australian structure types including discretionary and unit
+                trusts, companies, SMSFs, partnerships, personal holdings, assets,
+                loans, and document records.
               </p>
             </div>
             <div className="text-center space-y-4">
@@ -247,9 +246,9 @@ export default function AboutPage() {
                 Security First
               </h3>
               <p className="text-sm text-muted-foreground text-center">
-                Bank-grade encryption, role-based access controls, and Australian data
-                residency. Your financial data never leaves the country and is never
-                used to train AI models.
+                Sensitive identifiers such as ABN, ACN, and bank details are encrypted,
+                advisor access is permission-based, and admin actions are protected
+                through role checks and audit logs.
               </p>
             </div>
             <div className="text-center space-y-4">
@@ -260,9 +259,9 @@ export default function AboutPage() {
                 Complete Visibility
               </h3>
               <p className="text-sm text-muted-foreground text-center">
-                See every trust, entity, ownership chain, and asset in one interactive
-                graph. Klaris connects the dots that spreadsheets and filing cabinets
-                never could.
+                See trusts, companies, SMSFs, personal holdings, assets, and loans in one
+                interactive graph. Klaris connects records that spreadsheets and
+                filing cabinets usually separate.
               </p>
             </div>
           </div>

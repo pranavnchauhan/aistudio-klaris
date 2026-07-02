@@ -9,7 +9,7 @@ const features = [
   {
     title: "Record & Organize",
     description:
-      "Add every trust, company, SMSF, and asset into one structured vault. No more scattered spreadsheets.",
+      "Add trusts, companies, SMSFs, personal holdings, assets, loans, and linked documents into one structured workspace.",
   },
   {
     title: "Visualize Connections",
@@ -19,12 +19,12 @@ const features = [
   {
     title: "Maintain Records",
     description:
-      "Keep documents, valuations, and key dates up to date with built-in reminders and version history.",
+      "Attach deeds, certificates, valuations, receipts, and other supporting documents directly to the right structure or asset.",
   },
   {
     title: "Export & Share Anytime",
     description:
-      "Generate reports for your accountant, advisor, or family. Beautifully formatted and always current.",
+      "Export reports and grant controlled advisor access so your team can work from the same current record.",
   },
 ];
 

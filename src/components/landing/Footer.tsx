@@ -38,8 +38,8 @@ const Footer = () => {
             />
           </Link>
           <p className="text-sm text-gray-400 text-center max-w-md">
-            Wealth structure visualisation software for Australian accountants
-            and financial advisers serving high net worth clients.
+            Wealth structure visualisation software for Australian families, accountants,
+            and financial advisers who need clearer structure, asset, loan, and document records.
           </p>
           <div className="flex items-center gap-4">
             <a

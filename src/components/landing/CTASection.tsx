@@ -5,6 +5,7 @@ import Link from "next/link";
 import { ArrowRight, Calendar } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useInView } from "@/hooks/use-in-view";
+import { KLARIS_APP_CLIENT_SIGNUP_URL } from "@/lib/constants";
 
 export default function CTASection() {
   const [scrollY, setScrollY] = useState(0);
@@ -42,8 +43,8 @@ export default function CTASection() {
             Get Started
           </h2>
           <p className="text-lg text-primary-foreground/80 mb-8 text-center">
-            Your AI-powered wealth structure platform awaits. Book a demo to see
-            how Klaris can bring clarity to your wealth structure.
+            Start with a demo or request app access. New accounts are reviewed during
+            rollout so we can keep onboarding controlled and secure.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
@@ -55,6 +56,12 @@ export default function CTASection() {
               >
                 <Calendar className="mr-2 h-4 w-4" />
                 Book a Demo
+              </a>
+            </Button>
+            <Button size="lg" asChild>
+              <a href={KLARIS_APP_CLIENT_SIGNUP_URL}>
+                Request App Access
+                <ArrowRight className="ml-2 h-4 w-4" />
               </a>
             </Button>
           </div>

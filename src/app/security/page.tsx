@@ -6,14 +6,14 @@ import { KLARIS_EMAIL, KLARIS_SITE_URL } from "@/lib/constants";
 export const metadata: Metadata = {
   title: "Data Security",
   description:
-    "Klaris AI Data Security Policy. AES-256 encryption, Australian data residency, bank-grade security.",
+    "Klaris AI Data Security Policy. Sensitive-field encryption, Australian-region hosting, row-level access controls, and advisor permission controls.",
   alternates: {
     canonical: "https://klaris.com.au/security",
   },
   openGraph: {
     title: "Data Security | Klaris",
     description:
-      "Klaris AI Data Security Policy. AES-256 encryption, Australian data residency, bank-grade security.",
+      "Klaris AI Data Security Policy. Sensitive-field encryption, Australian-region hosting, row-level access controls, and advisor permission controls.",
     url: "https://klaris.com.au/security",
   },
 };
@@ -44,7 +44,7 @@ export default function SecurityPage() {
             "@type": "WebPage",
             name: "Data Security Policy",
             description:
-              "Klaris AI Data Security Policy. AES-256 encryption, Australian data residency, bank-grade security.",
+              "Klaris AI Data Security Policy. Sensitive-field encryption, Australian-region hosting, row-level access controls, and advisor permission controls.",
             url: `${KLARIS_SITE_URL}/security`,
             publisher: {
               "@type": "Organization",
@@ -128,9 +128,9 @@ export default function SecurityPage() {
                   Australian Data Residency
                 </h3>
                 <p className="text-emerald-700">
-                  All financial structure data is stored on servers located
-                  within Australia (Sydney, Australia), ensuring your sensitive
-                  financial information never leaves Australian jurisdiction.
+                  Production data is provisioned in the Australian region. This supports
+                  Australian data-residency expectations while specific providers
+                  and subprocessors remain governed by our policies and service terms.
                 </p>
               </div>
 
@@ -138,9 +138,8 @@ export default function SecurityPage() {
                 Infrastructure Provider
               </h3>
               <p className="text-foreground/80 mb-4">
-                Our platform runs on enterprise-grade cloud infrastructure with
-                data centres located in Sydney, Australia. All production data is
-                provisioned within the Australian region.
+                Our platform runs on managed cloud infrastructure. Production application
+                data is provisioned within the Australian region.
               </p>
 
               <h3 className="text-lg font-semibold text-primary mb-3">
@@ -163,8 +162,8 @@ export default function SecurityPage() {
                   cross-user data access.
                 </li>
                 <li>
-                  Administrative access does not include visibility into user
-                  financial data.
+                  Admin access is role-restricted and sensitive admin actions are logged,
+                  including admin view-ins to client wealth records.
                 </li>
               </ul>
             </section>
@@ -202,19 +201,18 @@ export default function SecurityPage() {
                 Data at Rest
               </h3>
               <p className="text-foreground/80 mb-4">
-                All data stored in our database is encrypted at rest using:
+                Sensitive data is protected through platform-level encryption and additional field-level encryption for selected identifiers:
               </p>
               <ul className="list-disc pl-6 space-y-2 text-foreground/80">
                 <li>
-                  <strong>AES-256 encryption</strong> - Industry-standard
-                  encryption used by financial institutions worldwide.
+                  <strong>Field-level encryption</strong> - Sensitive identifiers such
+                  as ABN, ACN, and bank details are encrypted before storage.
                 </li>
                 <li>
-                  Database backups are also encrypted using the same standard.
+                  The managed database platform also provides storage-level encryption controls.
                 </li>
                 <li>
-                  Encryption keys are managed through a dedicated key management
-                  service and are rotated regularly.
+                  Application encryption keys are held server-side and are not exposed in the browser.
                 </li>
               </ul>
             </section>
@@ -230,10 +228,9 @@ export default function SecurityPage() {
               </h3>
               <ul className="list-disc pl-6 space-y-2 text-foreground/80 mb-6">
                 <li>
-                  Minimum 12 characters with complexity requirements (uppercase,
-                  lowercase, numbers, and special characters).
+                  Public signup requires at least 8 characters with a number and special character. Admin-created temporary passwords require stronger complexity before first login.
                 </li>
-                <li>Passwords are hashed using bcrypt before storage.</li>
+                <li>Passwords are handled by Supabase Auth and are never stored by Klaris in plain text.</li>
                 <li>We never store passwords in plain text.</li>
               </ul>
 
@@ -241,9 +238,7 @@ export default function SecurityPage() {
                 Email Verification
               </h3>
               <p className="text-foreground/80 mb-6">
-                All accounts require email verification before accessing the
-                Platform. A verification link is sent to the registered email
-                address and must be confirmed before the account becomes active.
+                Public signups may require email verification and admin approval before full access is activated. Admin-created and advisor-sponsored users may receive temporary credentials and must change their password at first login.
               </p>
 
               <h3 className="text-lg font-semibold text-primary mb-3">
@@ -251,8 +246,7 @@ export default function SecurityPage() {
               </h3>
               <ul className="list-disc pl-6 space-y-2 text-foreground/80 mb-6">
                 <li>
-                  Two-factor authentication is available and recommended for all
-                  accounts.
+                  Authenticator-app MFA is offered during the forced password-change flow and can be enabled by users.
                 </li>
                 <li>
                   Google Single Sign-On (SSO) is available as an alternative
@@ -270,7 +264,7 @@ export default function SecurityPage() {
               </h3>
               <ul className="list-disc pl-6 space-y-2 text-foreground/80">
                 <li>
-                  Sessions are managed using secure, HTTP-only tokens.
+                  Sessions are managed by Supabase Auth using secure token-based session handling.
                 </li>
                 <li>
                   Sessions expire after a period of inactivity to reduce the
@@ -295,16 +289,16 @@ export default function SecurityPage() {
               <p className="text-foreground/80 mb-6">
                 Clients have full control over their own financial structure
                 data. Clients can view, create, edit, and delete their own
-                structures. Clients can grant or revoke advisor access at any
-                time.
+                structures, assets, loans, and linked documents. Clients can grant
+                or revoke advisor access at any time.
               </p>
 
               <h3 className="text-lg font-semibold text-primary mb-3">
                 Advisor Access
               </h3>
               <p className="text-foreground/80 mb-4">
-                Advisors can only access client data when explicitly invited by
-                the client:
+                Advisors can access client data when explicitly invited by the client or
+                when a sponsored client account is created through the advisor workflow:
               </p>
               <ul className="list-disc pl-6 space-y-2 text-foreground/80 mb-6">
                 <li>
@@ -340,11 +334,7 @@ export default function SecurityPage() {
                 routine access to user financial structure data. Administrative
                 tools manage platform operations (account status, subscription
                 management, technical support) without exposing financial data
-                entered by users. When support requires data access, this is
-                strictly opt-in by the user and fully audit-logged. In the event
-                of a technical incident, our response team may access the minimum
-                data necessary to resolve the issue. Database access is restricted
-                to essential maintenance operations and is logged.
+                entered by users. Admin client data view-ins are logged. In the event of a technical incident, our response team may access the minimum data necessary to resolve the issue. Database access is restricted to essential maintenance operations.
               </p>
             </section>
 

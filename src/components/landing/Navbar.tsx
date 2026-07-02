@@ -6,6 +6,7 @@ import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { Button } from "@/components/ui/button";
 import { Menu, X, User, ChevronDown } from "lucide-react";
+import { KLARIS_APP_AUTH_URL } from "@/lib/constants";
 
 const solutionsLinks = [
   { label: "For Accountants", href: "/for-accountants" },
@@ -163,12 +164,12 @@ const Navbar = () => {
               className="font-semibold border border-border hover:bg-muted"
             >
               <a
-                href="https://app.klaris.com.au"
+                href={KLARIS_APP_AUTH_URL}
                 className="flex items-center gap-2"
-                aria-label="Login to Klaris dashboard"
+                aria-label="Sign in to Klaris app"
               >
                 <User className="h-4 w-4" aria-hidden="true" />
-                Login
+                App Login
               </a>
             </Button>
             <Button asChild size="sm">
@@ -279,12 +280,12 @@ const Navbar = () => {
                 className="w-full mt-2 font-semibold border border-border"
               >
                 <a
-                  href="https://app.klaris.com.au"
+                  href={KLARIS_APP_AUTH_URL}
                   className="flex items-center gap-2"
-                  aria-label="Login to Klaris dashboard"
+                  aria-label="Sign in to Klaris app"
                 >
                   <User className="h-5 w-5" aria-hidden="true" />
-                  Login
+                  App Login
                 </a>
               </Button>
               <Button asChild className="w-full">

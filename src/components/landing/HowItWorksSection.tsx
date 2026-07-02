@@ -1,12 +1,12 @@
 "use client";
 
-import { CreditCard, LogIn, GitBranch } from "lucide-react";
+import { Calendar, LogIn, GitBranch } from "lucide-react";
 import GlowingIcon, { type IconColor } from "@/components/landing/GlowingIcon";
 import { useInView } from "@/hooks/use-in-view";
 
-const steps: { icon: typeof CreditCard; title: string; description: string; color: IconColor; step: number }[] = [
+const steps: { icon: typeof Calendar; title: string; description: string; color: IconColor; step: number }[] = [
   {
-    icon: CreditCard,
+    icon: Calendar,
     title: "Book a Demo",
     description:
       "Schedule a free walkthrough to see how Klaris maps your wealth structure. No commitment required.",
@@ -17,7 +17,7 @@ const steps: { icon: typeof CreditCard; title: string; description: string; colo
     icon: LogIn,
     title: "Access Your Vault",
     description:
-      "Log in to your secure vault and start adding your trusts, companies, SMSFs, and assets.",
+      "Create an account or receive advisor/admin-created access. New users may be reviewed before full access is activated.",
     color: "teal",
     step: 2,
   },
@@ -25,7 +25,7 @@ const steps: { icon: typeof CreditCard; title: string; description: string; colo
     icon: GitBranch,
     title: "Map Your Wealth",
     description:
-      "See your entire wealth structure visualised as a clear map: every entity, connection, and asset in one place. Klaris is wealth structure software built for Australian tax and trust rules.",
+      "Record structures, assets, loans, and documents, then view the relationships in a clear interactive map. Klaris supports Australian trusts, companies, SMSFs, partnerships, and personal holdings.",
     color: "blue",
     step: 3,
   },

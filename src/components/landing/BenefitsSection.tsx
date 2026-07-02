@@ -9,42 +9,42 @@ const benefits: { icon: typeof Eye; title: string; description: string; color: I
     icon: Eye,
     title: "Immediate Visibility",
     description:
-      "See every trust, company, SMSF, and asset in one dashboard. No more guessing or digging through files.",
+      "See structures, assets, loans, and supporting documents together instead of guessing from scattered files.",
     color: "blue",
   },
   {
     icon: Clock,
     title: "Time Savings",
     description:
-      "Cut hours of manual tracking down to minutes. Updates flow through your entire structure automatically.",
+      "Reduce manual reconstruction. Update records in the app and keep dashboards, maps, and linked views aligned.",
     color: "teal",
   },
   {
     icon: Heart,
     title: "Peace of Mind",
     description:
-      "Know that your family can find and understand everything if they ever need to, without relying on your memory.",
+      "Keep a clear, accessible record that can support family and adviser conversations without relying on memory.",
     color: "rose",
   },
   {
     icon: ShieldCheck,
     title: "Reduced Risk",
     description:
-      "Spot gaps in ownership, missing documents, and expiring registrations before they become problems.",
+      "Spot missing ABNs, missing documents, and unclear ownership records earlier in the review process.",
     color: "emerald",
   },
   {
     icon: Sparkles,
     title: "Easy to Maintain",
     description:
-      "Built for real people, not accountants. Add, update, and organize your structure with an intuitive interface.",
+      "Built for clients and advisors. Add, update, and organise records through guided forms and clear dashboards.",
     color: "amber",
   },
   {
     icon: Share2,
     title: "Export & Share",
     description:
-      "Generate professional reports for your advisor, accountant, or family at any time. Always current, always accurate.",
+      "Export reports and share controlled advisor access so the right people work from the same current record.",
     color: "violet",
   },
 ];

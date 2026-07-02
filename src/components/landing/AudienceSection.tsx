@@ -11,28 +11,28 @@ const audiences: { icon: typeof User; title: string; description: string; color:
     icon: User,
     title: "Individuals & Families",
     description:
-      "See your full wealth picture, every trust, company, and asset, all in one secure dashboard. Finally know exactly where you stand.",
+      "Record trusts, companies, SMSFs, assets, loans, and documents in one place, then invite trusted advisors when you choose.",
     color: "blue",
   },
   {
     icon: Calculator,
     title: "Accountants",
     description:
-      "Stop chasing clients for structure details. Klaris gives you instant visibility into their entities, assets, and connections.",
+      "Work from a client-approved structure map instead of rebuilding ownership details from spreadsheets and email threads.",
     color: "emerald",
   },
   {
     icon: Briefcase,
     title: "Financial Advisors",
     description:
-      "Understand your client's complete financial architecture before making recommendations. Better data, better advice.",
+      "View client-granted structure, asset, loan, and document records before planning conversations. Better context, clearer advice.",
     color: "amber",
   },
   {
     icon: Home,
     title: "Families Planning Ahead",
     description:
-      "Ensure the next generation can find, understand, and manage everything you've built. Your legacy, protected.",
+      "Give successors and decision-makers a clearer record to discuss with the family's accountant, adviser, or solicitor.",
     color: "teal",
   },
 ];

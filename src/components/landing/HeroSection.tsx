@@ -5,6 +5,7 @@ import Link from "next/link";
 import { ShieldCheck, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import YouTubeFacade from "@/components/landing/YouTubeFacade";
+import { KLARIS_APP_CLIENT_SIGNUP_URL } from "@/lib/constants";
 
 export default function HeroSection() {
   const [scrollY, setScrollY] = useState(0);
@@ -46,14 +47,14 @@ export default function HeroSection() {
             </h1>
 
             <p className="text-lg text-muted-foreground max-w-lg">
-              Klaris gives you a single, secure place to map every trust, entity, and asset
-              your family holds, so nothing falls through the cracks.
+              Klaris gives you a single workspace to record ownership structures, assets,
+              loans, and documents, then share the right view with your trusted advisors.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
               <Button size="lg" asChild>
-                <a href="/contact">
-                  Secure Your Legacy Now
+                <a href={KLARIS_APP_CLIENT_SIGNUP_URL}>
+                  Request App Access
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </a>
               </Button>
@@ -74,7 +75,7 @@ export default function HeroSection() {
             <YouTubeFacade
               videoId="iF6_-tx2RgI"
               title="Klaris: Structure Your Wealth"
-              caption="See how Klaris maps your entire wealth structure in minutes."
+              caption="See how Klaris maps structures, assets, loans, and documents in one workspace."
             />
           </div>
         </div>
