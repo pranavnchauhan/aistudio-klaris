@@ -17,9 +17,9 @@ export default function JsonLd() {
           "Visualize financial relationships",
           "Track trusts, SMSFs, and companies",
           "Advisor collaboration",
-          "PDF export and reporting",
-          "Australian data hosting",
-          "SSL/TLS encryption",
+          "Linked document storage",
+          "Approval-based account access",
+          "SSL/TLS encryption in transit",
         ],
       },
       {
@@ -111,7 +111,7 @@ export default function JsonLd() {
         telephone: KLARIS_PHONE_DISPLAY,
         email: KLARIS_EMAIL,
         description:
-          "Klaris by Krrisp Pty Ltd provides AI-powered SMSF structure visualization software for Australian accountants, financial advisors, and SMSF professionals.",
+          "Klaris by Krrisp Pty Ltd provides wealth-structure record and visualisation software for Australian clients, accountants, financial advisors, and SMSF professionals.",
         currenciesAccepted: "AUD",
         paymentAccepted: "Credit Card, Debit Card",
         openingHours: "Mo-Fr 09:00-17:00",

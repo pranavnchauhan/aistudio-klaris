@@ -6,14 +6,14 @@ import { KLARIS_EMAIL, KLARIS_SITE_URL } from "@/lib/constants";
 export const metadata: Metadata = {
   title: "Terms of Service",
   description:
-    "Legal terms for using Australia's trusted wealth planning software.",
+    "Legal terms for using Klaris wealth-structure record and advisor-collaboration software.",
   alternates: {
     canonical: "https://klaris.com.au/terms",
   },
   openGraph: {
     title: "Terms of Service | Klaris",
     description:
-      "Legal terms for using Australia's trusted wealth planning software.",
+      "Legal terms for using Klaris wealth-structure record and advisor-collaboration software.",
     url: "https://klaris.com.au/terms",
   },
 };
@@ -49,11 +49,11 @@ export default function TermsPage() {
             "@type": "WebPage",
             name: "Terms of Service",
             description:
-              "Legal terms for using Australia's trusted wealth planning software.",
+              "Legal terms for using Klaris wealth-structure record and advisor-collaboration software.",
             url: `${KLARIS_SITE_URL}/terms`,
             publisher: {
               "@type": "Organization",
-              name: "Klaris AI",
+              name: "Klaris",
               url: KLARIS_SITE_URL,
             },
             datePublished: "2024-12-16",
@@ -83,7 +83,7 @@ export default function TermsPage() {
                 Important: No Financial Advice Disclaimer
               </h2>
               <p className="text-destructive/90 mb-3">
-                Klaris AI is a wealth structuring and documentation tool. It
+                Klaris is a wealth-structure record and documentation tool. It
                 does not provide financial advice, tax advice, legal advice, or
                 investment recommendations. The Platform is designed to help you
                 document and visualise your existing financial structures.
@@ -91,7 +91,7 @@ export default function TermsPage() {
               <p className="text-destructive/90">
                 You should always consult a qualified financial advisor,
                 accountant, or legal professional before making any financial
-                decisions. Klaris AI and Krrisp Pty Ltd accept no liability for
+                decisions. Klaris and Krrisp Pty Ltd accept no liability for
                 any financial decisions made based on information displayed in
                 the Platform.
               </p>
@@ -124,9 +124,9 @@ export default function TermsPage() {
               <p className="text-foreground/80 mb-4">
                 These Terms of Service (&quot;Terms&quot;) constitute a legally
                 binding agreement between you and Krrisp Pty Ltd (ACN: 609 221
-                570), trading as Klaris AI (&quot;we&quot;, &quot;us&quot;,
-                &quot;our&quot;), governing your use of the Klaris wealth
-                planning software platform (&quot;Platform&quot;).
+                570), operator of Klaris (&quot;we&quot;, &quot;us&quot;,
+                &quot;our&quot;), governing your use of the Klaris wealth-structure record and collaboration
+                software platform (&quot;Platform&quot;).
               </p>
               <p className="text-foreground/80 mb-4">
                 By creating an account, accessing, or using the Platform, you
@@ -181,7 +181,7 @@ export default function TermsPage() {
                 3. Service Description
               </h2>
               <p className="text-foreground/80 mb-4">
-                Klaris AI is a wealth structuring and documentation platform
+                Klaris is a wealth-structure record and collaboration platform
                 that enables users to:
               </p>
               <ul className="list-disc pl-6 space-y-2 text-foreground/80 mb-6">
@@ -192,10 +192,10 @@ export default function TermsPage() {
                 <li>Track assets and their ownership relationships.</li>
                 <li>Record beneficiary and trustee information.</li>
                 <li>
-                  Collaborate with financial advisors on structural planning.
+                  Collaborate with invited advisors using view-only or full-access permissions.
                 </li>
                 <li>
-                  Generate reports and exports of financial structures.
+                  Store linked documents for structures and assets.
                 </li>
               </ul>
 
@@ -240,7 +240,7 @@ export default function TermsPage() {
                   structures.
                 </li>
                 <li>
-                  Can export their data at any time.
+                  Can request assistance with data access or export.
                 </li>
                 <li>
                   Can revoke advisor access at any time.
@@ -257,8 +257,7 @@ export default function TermsPage() {
               </p>
               <ul className="list-disc pl-6 space-y-2 text-foreground/80 mb-6">
                 <li>
-                  Can access client structures only when explicitly invited by
-                  the client.
+                  Can access client structures when explicitly invited by the client or when a sponsored client account is created through the advisor workflow.
                 </li>
                 <li>
                   Receive read-only or edit access as determined by the client.
@@ -293,20 +292,14 @@ export default function TermsPage() {
                 Email Verification
               </h3>
               <p className="text-foreground/80 mb-6">
-                All accounts require email verification before access is
-                granted. You must use a valid email address that you have access
-                to. We may send security-related notifications to this email
-                address.
+                Public signups may require email verification and admin approval before full access is granted. Admin-created and advisor-sponsored users may receive temporary credentials. You must use a valid email address that you have access to because we may send security-related notifications to this email address.
               </p>
 
               <h3 className="text-lg font-semibold text-primary mb-3">
                 Password Requirements
               </h3>
               <p className="text-foreground/80 mb-6">
-                Passwords must be at least 12 characters long and include a mix
-                of uppercase letters, lowercase letters, numbers, and special
-                characters. You are responsible for maintaining the security of
-                your password and must not share it with anyone.
+                Public signup passwords must meet the requirements shown in the app. Admin-created temporary passwords require stronger complexity and must be changed at first login. You are responsible for maintaining the security of your password and must not share it with anyone.
               </p>
 
               <h3 className="text-lg font-semibold text-primary mb-3">
@@ -340,10 +333,7 @@ export default function TermsPage() {
                 Plans
               </h3>
               <p className="text-foreground/80 mb-6">
-                The Platform offers various subscription plans with different
-                features and limits. Current pricing is displayed on our website
-                and within the Platform. All prices are in Australian Dollars
-                (AUD) and include GST where applicable.
+                The Platform supports direct client subscriptions and advisor-sponsored access. Pricing, advisor licensing, firm arrangements, and any demo access are confirmed during onboarding or displayed in the Platform where applicable. All paid prices are in Australian Dollars (AUD) and include GST where applicable.
               </p>
 
               <h3 className="text-lg font-semibold text-primary mb-3">
@@ -413,10 +403,7 @@ export default function TermsPage() {
                 Advisory Firm Licensing
               </h3>
               <p className="text-foreground/80">
-                Advisory firms requiring multiple advisor accounts should
-                contact us for firm licensing arrangements. Firm licenses
-                provide centralised billing and account management for advisory
-                practices.
+                Advisory firms requiring multiple advisor accounts or sponsored client access should contact us for current onboarding and licensing arrangements. We will confirm the applicable billing, access model, and account management process before activation.
               </p>
             </section>
 
@@ -537,9 +524,7 @@ export default function TermsPage() {
                 Export
               </h3>
               <p className="text-foreground/80 mb-6">
-                You can export your financial structure data at any time through
-                the Platform&apos;s export features. We provide data in standard
-                formats to ensure portability.
+                You can request access to or export of your financial structure data by contacting us. Where self-service export features are available in the Platform, they should be used for routine data access.
               </p>
 
               <h3 className="text-lg font-semibold text-primary mb-3">
@@ -696,9 +681,8 @@ export default function TermsPage() {
                 </h4>
                 <p className="text-amber-700">
                   If a client grants an advisor &quot;Full Control&quot; access,
-                  the advisor can create, edit, and delete structures on behalf
-                  of the client. The advisor accepts full responsibility for any
-                  changes made under Full Control access. Klaris AI is not
+                  the advisor can create, edit, and delete client records on behalf of the client, including structures, assets, loans, and linked documents. The advisor accepts full responsibility for any
+                  changes made under Full Control access. Klaris is not
                   liable for any data changes, losses, or consequences resulting
                   from advisor actions under Full Control access.
                 </p>
@@ -736,10 +720,10 @@ export default function TermsPage() {
                   Notice
                 </h4>
                 <p className="text-blue-700">
-                  Klaris AI does not verify advisor qualifications, professional
+                  Klaris does not verify advisor qualifications, professional
                   registrations, or the quality of advice provided by advisors.
                   The relationship between a client and their advisor is
-                  independent of Klaris AI. We are not a party to any
+                  independent of Klaris. We are not a party to any
                   advisor-client engagement and accept no liability for
                   professional advice or services provided by advisors.
                 </p>

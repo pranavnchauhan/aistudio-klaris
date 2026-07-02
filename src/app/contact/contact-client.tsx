@@ -76,8 +76,8 @@ export default function ContactClient() {
             Contact Klaris
           </h1>
           <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto text-center">
-            Have a question about Klaris AI? Want to book a demo or discuss
-            advisor licensing? We&rsquo;d love to hear from you.
+            Have a question about Klaris? Want to request app access or discuss
+            advisor onboarding? We&rsquo;d love to hear from you.
           </p>
         </div>
       </section>

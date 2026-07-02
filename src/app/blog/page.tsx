@@ -8,19 +8,19 @@ export const metadata: Metadata = {
       "Blog | Klaris - Wealth Structure Insights for Accountants",
   },
   description:
-    "Practical guides for Australian accountants and financial advisers on trust documentation, SMSF structure mapping, estate planning, and wealth structure visualisation.",
+    "Practical guides for Australian accountants and financial advisers on structure documentation, SMSF mapping, advisor collaboration, and wealth structure visualisation.",
   alternates: { canonical: "https://klaris.com.au/blog" },
   openGraph: {
     title: "Blog | Klaris - Wealth Structure Insights for Accountants",
     description:
-      "Practical guides for Australian accountants and financial advisers on trust documentation, SMSF structure mapping, estate planning, and wealth structure visualisation.",
+      "Practical guides for Australian accountants and financial advisers on structure documentation, SMSF mapping, advisor collaboration, and wealth structure visualisation.",
     url: "https://klaris.com.au/blog",
   },
   twitter: {
     card: "summary_large_image",
     title: "Blog | Klaris - Wealth Structure Insights for Accountants",
     description:
-      "Practical guides for Australian accountants and financial advisers on trust documentation, SMSF structure mapping, estate planning, and wealth structure visualisation.",
+      "Practical guides for Australian accountants and financial advisers on structure documentation, SMSF mapping, advisor collaboration, and wealth structure visualisation.",
     images: ["https://klaris.com.au/og-image.png"],
   },
 };

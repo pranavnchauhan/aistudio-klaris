@@ -357,13 +357,10 @@ export default function ForAccountantsPage() {
                 <GlowingIcon icon={Server} color="teal" />
               </div>
               <h3 className="text-lg font-semibold text-primary text-center">
-                Australian hosting and data residency
+                Australian-region provisioning
               </h3>
               <p className="text-sm text-muted-foreground text-center">
-                Production data is provisioned in the Australian region so client
-                information remains within Australian jurisdiction. This
-                supports your obligations under the Australian Privacy Act and
-                your own internal data residency policies.
+                Production application data is provisioned in the Australian region. Specific providers and subprocessors are governed by our policies and service terms, supporting Australian privacy and data-residency expectations.
               </p>
             </div>
             <div className="text-center space-y-4">
@@ -374,9 +371,7 @@ export default function ForAccountantsPage() {
                 Encryption as standard
               </h3>
               <p className="text-sm text-muted-foreground text-center">
-                All connections to Klaris are encrypted in transit with modern
-                TLS. Data at rest is encrypted using AES-256 encryption, the
-                industry standard for protecting sensitive information.
+                All connections to Klaris are encrypted in transit with modern TLS. Sensitive identifiers such as ABN, ACN, and bank details are protected with field-level encryption, alongside managed platform storage controls.
               </p>
             </div>
             <div className="text-center space-y-4">

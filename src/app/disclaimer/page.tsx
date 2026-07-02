@@ -26,11 +26,11 @@ export default function DisclaimerPage() {
             "@type": "WebPage",
             name: "Disclaimer",
             description:
-              "Important disclaimers about Klaris AI wealth planning software. No financial advice provided.",
+              "Important disclaimers about Klaris wealth-structure record software. No financial, tax, or legal advice provided.",
             url: `${KLARIS_SITE_URL}/disclaimer`,
             publisher: {
               "@type": "Organization",
-              name: "Klaris AI",
+              name: "Klaris",
               url: KLARIS_SITE_URL,
             },
             datePublished: "2026-04-01",
@@ -63,7 +63,7 @@ export default function DisclaimerPage() {
                 <strong>ACN:</strong> 609 221 570
               </p>
               <p className="text-foreground/80">
-                <strong>Trading as:</strong> Klaris AI
+                <strong>Product:</strong> Klaris
               </p>
             </div>
 
@@ -96,7 +96,7 @@ export default function DisclaimerPage() {
                 1. No Financial Advice
               </h2>
               <p className="text-foreground/80 mb-4">
-                Klaris AI is a data management and financial structure
+                Klaris is a data management and financial structure
                 visualisation platform. It does not provide financial advice, tax
                 advice, legal advice, or any other professional advisory
                 services.
@@ -114,7 +114,7 @@ export default function DisclaimerPage() {
                 2. No Guarantee of Outcomes
               </h2>
               <p className="text-foreground/80 mb-4">
-                The tools, reports, and visualisations provided by Klaris AI are
+                The records, documents, and visualisations provided by Klaris are
                 for organisational and informational purposes only. They are not
                 a substitute for advice from a licensed financial adviser,
                 accountant, or solicitor.

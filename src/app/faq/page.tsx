@@ -44,7 +44,7 @@ const faqSections: FaqSection[] = [
         question: "What is Klaris?",
         answer: [
           "Klaris is wealth structure visualisation software built in Australia to give a single, visual source of truth for trusts, companies, SMSFs, and personal assets. It maps how entities connect, who controls what, and where value ultimately flows, so complex client structures become easy to understand.",
-          "Klaris is built around the KRSP Framework - Know, Record, Structure, Protect - so every entity and relationship is captured, mapped, and safeguarded in a consistent way.",
+          "Klaris is built around the KRSP Framework - Know, Record, Structure, Protect - so key entities and relationships can be recorded, mapped, and safeguarded in a consistent way.",
         ],
       },
       {
@@ -81,7 +81,7 @@ const faqSections: FaqSection[] = [
       {
         question: "How does Klaris help accountants and advisers in practice?",
         answer: [
-          "Klaris pulls together all of a client group's entities, trusts, SMSFs, and key assets into one visual wealth map. This reduces discovery time, surfaces gaps earlier, and makes strategy and risk conversations with high net worth clients clearer and more concrete.",
+          "Klaris pulls together a client group's recorded entities, trusts, SMSFs, assets, loans, and linked documents into one visual wealth map. This reduces discovery time, surfaces gaps earlier, and makes strategy and risk conversations with high net worth clients clearer and more concrete.",
         ],
       },
       {
@@ -290,7 +290,7 @@ export default function FaqPage() {
           <p className="text-sm text-muted-foreground text-center">
             Reviewed by{" "}
             <span className="font-medium text-primary">Pranav Chauhan</span>,
-            Founder of Klaris AI, updated April 2026
+            Founder of Klaris, updated April 2026
           </p>
         </div>
       </section>

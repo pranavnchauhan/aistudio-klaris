@@ -26,11 +26,11 @@ export default function RefundPolicyPage() {
             "@type": "WebPage",
             name: "Refund & Cancellation Policy",
             description:
-              "Refund and cancellation policy for Klaris AI subscription plans.",
+              "Refund and cancellation policy for Klaris subscriptions and paid app access.",
             url: `${KLARIS_SITE_URL}/refund-policy`,
             publisher: {
               "@type": "Organization",
-              name: "Klaris AI",
+              name: "Klaris",
               url: KLARIS_SITE_URL,
             },
             datePublished: "2026-04-01",
@@ -63,8 +63,8 @@ export default function RefundPolicyPage() {
                 <strong>ACN:</strong> 609 221 570
               </p>
               <p className="text-foreground/80">
-                <strong>Product:</strong> Klaris AI - Wealth Planning
-                Software
+                <strong>Product:</strong> Klaris - Wealth Structure
+                Record Software
               </p>
             </div>
 
@@ -97,8 +97,7 @@ export default function RefundPolicyPage() {
                 1. Subscription Model
               </h2>
               <p className="text-foreground/80">
-                Klaris AI is offered on a subscription basis. Subscription fees
-                are billed monthly via Stripe.
+                Klaris direct client access is offered on a subscription basis, with fees billed via Stripe where a paid subscription applies. Advisor-sponsored, demo, or firm access may follow different onboarding arrangements confirmed with Klaris.
               </p>
             </section>
 
@@ -108,13 +107,10 @@ export default function RefundPolicyPage() {
                 2. Cancellation
               </h2>
               <p className="text-foreground/80 mb-4">
-                You may cancel your Klaris subscription at any time from your
-                account settings. Cancellation takes effect at the end of your
-                current billing period.
+                If you hold a direct paid Klaris subscription, you may cancel it from your account billing settings. Cancellation takes effect at the end of your current billing period.
               </p>
               <p className="text-foreground/80">
-                You will retain access to the platform until the end of the paid
-                period.
+                You will retain paid access until the end of the paid period, unless access is suspended or terminated under the Terms of Service.
               </p>
             </section>
 
@@ -124,18 +120,14 @@ export default function RefundPolicyPage() {
                 3. No Refunds for Partial Months
               </h2>
               <p className="text-foreground/80 mb-4">
-                We do not provide refunds for partial months of subscription. If
-                you cancel mid-period, you will retain access until the end of
-                that billing cycle and will not be charged for the following
-                period.
+                We do not provide refunds for partial months of direct subscriptions. If you cancel mid-period, you will retain access until the end of that billing cycle and will not be charged for the following period.
               </p>
               <div className="bg-blue-50 border border-blue-200 rounded-xl p-6">
                 <h4 className="text-lg font-semibold text-blue-800 mb-2">
                   Summary
                 </h4>
                 <p className="text-blue-700">
-                  Cancel anytime. Keep access until the end of the billing
-                  cycle. No charge for the next period.
+                  Direct subscribers can cancel anytime. Keep paid access until the end of the billing cycle. No charge for the next period.
                 </p>
               </div>
             </section>
@@ -146,9 +138,7 @@ export default function RefundPolicyPage() {
                 4. Price Changes
               </h2>
               <p className="text-foreground/80 mb-4">
-                We will provide at least 30 days&apos; written notice before any
-                price increase. If you do not accept the new price, you may
-                cancel before the increase takes effect without charge.
+                For direct paid subscriptions, we will provide at least 30 days&apos; written notice before any price increase. If you do not accept the new price, you may cancel before the increase takes effect without charge.
               </p>
             </section>
 

@@ -8,7 +8,7 @@ import CookieConsent from "@/components/landing/CookieConsent";
 export const metadata: Metadata = {
   metadataBase: new URL("https://klaris.com.au"),
   title: {
-    default: "Klaris | Structure Your Wealth & Secure Your Legacy",
+    default: "Klaris | Map Wealth Structures & Advisor Access",
     template: "%s | Klaris - Australian Wealth Structure Visualisation Software",
   },
   description:
@@ -24,8 +24,8 @@ export const metadata: Metadata = {
     "wealth visibility platform financial advisors",
     "high net worth client portal accountants",
     "trust deed management software australia",
-    "klaris AI",
-    "estate planning software australia",
+    "wealth structure collaboration platform",
+    "advisor client wealth structure portal",
   ],
   alternates: { canonical: "https://klaris.com.au" },
   authors: [{ name: "Krrisp Digital" }],
@@ -35,9 +35,9 @@ export const metadata: Metadata = {
     locale: "en_AU",
     url: "https://klaris.com.au/",
     siteName: "Klaris",
-    title: "Klaris | Structure Your Wealth & Secure Your Legacy",
+    title: "Klaris | Map Wealth Structures & Advisor Access",
     description:
-      "The leading finance visibility platform for Australian families and advisors to manage trusts, SMSFs, and complex ownership structures.",
+      "A secure workspace for Australian families and advisors to record structures, assets, loans, documents, and controlled advisor access.",
     images: [
       {
         url: "/og-image.png",
@@ -49,9 +49,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Klaris | Structure Your Wealth & Secure Your Legacy",
+    title: "Klaris | Map Wealth Structures & Advisor Access",
     description:
-      "The leading finance visibility platform for Australian families and advisors to manage trusts, SMSFs, and complex ownership structures.",
+      "A secure workspace for Australian families and advisors to record structures, assets, loans, documents, and controlled advisor access.",
     images: ["/og-image.png"],
   },
   verification: {
@@ -72,15 +72,15 @@ export const metadata: Metadata = {
     "geo.region": "AU",
     "geo.placename": "Bella Vista",
     "ai:description":
-      "Klaris is Australian wealth structure visualisation software built for accountants and financial advisers serving high net worth clients. Maps trusts, SMSFs, companies, and inter-entity loans in one secure platform.",
+      "Klaris is Australian wealth-structure record and collaboration software for clients, accountants, and financial advisers. It records structures, assets, loans, linked documents, and advisor permissions in one secure workspace.",
     "ai:category":
-      "AI Wealth Planning Tool, Wealth Structuring Software, Estate Planning Software, Financial Structure Visualizer",
+      "Wealth Structure Mapping Software, Advisor Client Collaboration Platform, Financial Structure Visualiser",
     "ai:target_audience":
-      "Australian accountants, financial advisers, and accounting firms serving high net worth clients and complex family groups",
+      "Australian clients, accountants, financial advisers, and advisory firms managing complex family groups",
     "ai:key_features":
-      "AI-powered wealth structure visualisation, interactive wealth graphs, entity and ownership mapping, trust documentation, SMSF tracking",
+      "structure records, asset and loan tracking, linked documents, wealth graph visualisation, client-approved advisor access",
     "ai:pricing":
-      "Book a demo to discuss your needs at cal.com/kd-pc/klaris-partnership-discussion",
+      "Client subscription and advisor access options are confirmed during onboarding.",
   },
 };
 

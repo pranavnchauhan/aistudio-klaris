@@ -8,7 +8,7 @@ import { useInView } from "@/hooks/use-in-view";
 const securityFeatures: { icon: typeof Shield; title: string; description: string; color: IconColor }[] = [
   {
     icon: Shield,
-    title: "AES-256 Encryption",
+    title: "Sensitive-Field Encryption",
     description:
       "Traffic is protected with HTTPS/TLS, and sensitive identifiers such as ABN, ACN, and bank details are encrypted before storage.",
     color: "blue",
@@ -40,7 +40,7 @@ export default function SecurityTrustSection() {
             Security & Trust
           </p>
           <h2 className="text-3xl font-bold text-primary sm:text-4xl text-center">
-            Your Data Is Safe with Klaris
+            Data protection built around access controls
           </h2>
         </div>
 

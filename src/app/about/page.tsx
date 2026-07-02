@@ -8,17 +8,17 @@ import { Button } from "@/components/ui/button";
 export const metadata: Metadata = {
   title: "About",
   description:
-    "Klaris AI is Australian wealth structure visualisation software for mapping structures, assets, loans, documents, and advisor access.",
+    "Klaris is Australian wealth structure visualisation software for mapping structures, assets, loans, documents, and advisor access.",
   keywords: [
-    "klaris AI",
-    "wealth planning software Australia",
+    "klaris",
+    "wealth structure software Australia",
     "financial structure visualizer",
   ],
   alternates: { canonical: "https://klaris.com.au/about" },
   openGraph: {
     title: "About | Klaris",
     description:
-      "Klaris AI is Australian wealth structure visualisation software for mapping structures, assets, loans, documents, and advisor access.",
+      "Klaris is Australian wealth structure visualisation software for mapping structures, assets, loans, documents, and advisor access.",
     url: "https://klaris.com.au/about",
   },
 };
@@ -27,7 +27,7 @@ export default function AboutPage() {
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Organization",
-    name: "Klaris AI",
+    name: "Klaris",
     url: "https://klaris.com.au",
     logo: "https://klaris.com.au/klaris-logo.webp",
     description:
@@ -68,7 +68,7 @@ export default function AboutPage() {
             <span>Our Story</span>
           </div>
           <h1 className="text-4xl font-bold tracking-tight text-primary sm:text-5xl lg:text-6xl text-center">
-            Klaris AI. The End of Financial Blind Spots.
+            Klaris. The End of Financial Blind Spots.
           </h1>
           <p className="mt-6 text-lg text-muted-foreground max-w-2xl mx-auto text-center">
             We believe Australian families and advisors need a clearer way to record
@@ -86,7 +86,7 @@ export default function AboutPage() {
               A Krrisp Digital Product.
             </h2>
             <p className="text-muted-foreground text-lg mb-6 text-center">
-              Klaris AI is proudly built by{" "}
+              Klaris is proudly built by{" "}
               <a
                 href="https://krrispdigital.com.au"
                 target="_blank"
@@ -95,7 +95,7 @@ export default function AboutPage() {
               >
                 Krrisp Digital
               </a>
-              , an Australian digital agency specialising in AI-powered solutions for
+              , an Australian digital agency specialising in software and automation solutions for
               complex business problems.
             </p>
             <blockquote className="border-l-4 border-primary/30 pl-6 italic text-muted-foreground text-base">
@@ -113,7 +113,7 @@ export default function AboutPage() {
           <div className="max-w-3xl mx-auto text-center">
             <Image
               src="/pranav-chauhan.png"
-              alt="Pranav Chauhan, Founder and CEO of Klaris AI"
+              alt="Pranav Chauhan, Founder and CEO of Klaris"
               width={112}
               height={112}
               className="rounded-full mx-auto mb-6 border-4 border-primary/10"
@@ -295,7 +295,7 @@ export default function AboutPage() {
       <section className="py-12">
         <div className="max-w-[1200px] mx-auto px-5 text-center">
           <p className="text-sm text-muted-foreground text-center">
-            Klaris AI is part of the{" "}
+            Klaris is part of the{" "}
             <a
               href="https://krrispdigital.com.au"
               target="_blank"

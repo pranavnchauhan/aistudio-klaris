@@ -351,14 +351,10 @@ export default function ForFamiliesPage() {
       <section className="py-16 md:py-24 bg-muted/20">
         <div className="max-w-3xl mx-auto px-5">
           <h2 className="text-2xl font-bold text-primary sm:text-3xl mb-6 text-center">
-            Built specifically for Australian trust law and SMSF
+            Built around Australian structure types
           </h2>
           <p className="text-muted-foreground mb-6">
-            Klaris is built in Australia for Australian trust structures. The
-            platform understands Australian discretionary trusts, unit trusts,
-            self-managed super funds, and the estate planning concepts that
-            matter under Australian law - not generic global templates adapted
-            for the Australian market.
+            Klaris is built in Australia for Australian structure records. The platform supports Australian discretionary trusts, unit trusts, self-managed super funds, companies, personal holdings, assets, loans, documents, and advisor access workflows rather than generic global templates.
           </p>
           <p className="text-muted-foreground">
             Production data is provisioned in the Australian region and managed with

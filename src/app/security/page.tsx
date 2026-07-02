@@ -6,14 +6,14 @@ import { KLARIS_EMAIL, KLARIS_SITE_URL } from "@/lib/constants";
 export const metadata: Metadata = {
   title: "Data Security",
   description:
-    "Klaris AI Data Security Policy. Sensitive-field encryption, Australian-region hosting, row-level access controls, and advisor permission controls.",
+    "Klaris Data Security Policy. Sensitive-field encryption, Australian-region provisioning, row-level access controls, admin audit logging, and advisor permission controls.",
   alternates: {
     canonical: "https://klaris.com.au/security",
   },
   openGraph: {
     title: "Data Security | Klaris",
     description:
-      "Klaris AI Data Security Policy. Sensitive-field encryption, Australian-region hosting, row-level access controls, and advisor permission controls.",
+      "Klaris Data Security Policy. Sensitive-field encryption, Australian-region provisioning, row-level access controls, admin audit logging, and advisor permission controls.",
     url: "https://klaris.com.au/security",
   },
 };
@@ -44,11 +44,11 @@ export default function SecurityPage() {
             "@type": "WebPage",
             name: "Data Security Policy",
             description:
-              "Klaris AI Data Security Policy. Sensitive-field encryption, Australian-region hosting, row-level access controls, and advisor permission controls.",
+              "Klaris Data Security Policy. Sensitive-field encryption, Australian-region provisioning, row-level access controls, admin audit logging, and advisor permission controls.",
             url: `${KLARIS_SITE_URL}/security`,
             publisher: {
               "@type": "Organization",
-              name: "Klaris AI",
+              name: "Klaris",
               url: KLARIS_SITE_URL,
             },
             datePublished: "2024-12-16",
@@ -98,9 +98,9 @@ export default function SecurityPage() {
               </h2>
               <p className="text-foreground/80 mb-4">
                 This Data Security Policy describes the security measures
-                implemented by Krrisp Pty Ltd (ACN: 609 221 570), trading as
-                Klaris AI (&quot;we&quot;, &quot;us&quot;, &quot;our&quot;), to
-                protect information processed through our wealth planning
+                implemented by Krrisp Pty Ltd (ACN: 609 221 570), operator of
+                Klaris (&quot;we&quot;, &quot;us&quot;, &quot;our&quot;), to
+                protect information processed through our wealth-structure record
                 software platform (&quot;Klaris&quot; or the
                 &quot;Platform&quot;).
               </p>
@@ -512,10 +512,7 @@ export default function SecurityPage() {
                 </li>
                 <li>
                   <strong>APP 8 (Cross-border Disclosure)</strong> -
-                  Financial structure data remains within Australian
-                  jurisdiction. Where account-level data is processed
-                  internationally (e.g., payment processing via Stripe), we
-                  ensure appropriate safeguards are in place.
+                  Production application data is provisioned in the Australian region. Where account-level, payment, email, analytics, support, or operational metadata is processed by subprocessors, we use appropriate safeguards and contractual controls.
                 </li>
                 <li>
                   <strong>Notifiable Data Breaches Scheme</strong> - We

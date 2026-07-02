@@ -6,14 +6,14 @@ import { KLARIS_EMAIL, KLARIS_SITE_URL } from "@/lib/constants";
 export const metadata: Metadata = {
   title: "Privacy Policy",
   description:
-    "How our wealth planning software Australia protects your financial structure data.",
+    "How Klaris protects account, structure, asset, loan, document, and advisor-access data.",
   alternates: {
     canonical: "https://klaris.com.au/privacy",
   },
   openGraph: {
     title: "Privacy Policy | Klaris",
     description:
-      "How our wealth planning software Australia protects your financial structure data.",
+      "How Klaris protects account, structure, asset, loan, document, and advisor-access data.",
     url: "https://klaris.com.au/privacy",
   },
 };
@@ -46,11 +46,11 @@ export default function PrivacyPage() {
             "@type": "WebPage",
             name: "Privacy Policy",
             description:
-              "How our wealth planning software Australia protects your financial structure data.",
+              "How Klaris protects account, structure, asset, loan, document, and advisor-access data.",
             url: `${KLARIS_SITE_URL}/privacy`,
             publisher: {
               "@type": "Organization",
-              name: "Klaris AI",
+              name: "Klaris",
               url: KLARIS_SITE_URL,
             },
             datePublished: "2024-12-16",
@@ -100,9 +100,9 @@ export default function PrivacyPage() {
               </h2>
               <p className="text-foreground/80 mb-4">
                 This Privacy Policy describes how Krrisp Pty Ltd (ACN: 609 221
-                570), trading as Klaris AI (&quot;we&quot;, &quot;us&quot;,
+                570), operator of Klaris (&quot;we&quot;, &quot;us&quot;,
                 &quot;our&quot;), collects, uses, stores, and protects your
-                information when you use our wealth planning software platform
+                information when you use our wealth-structure record platform
                 (&quot;Klaris&quot; or the &quot;Platform&quot;).
               </p>
               <p className="text-foreground/80 mb-4">
@@ -254,11 +254,7 @@ export default function PrivacyPage() {
                   Important
                 </h4>
                 <p className="text-blue-700">
-                  Klaris AI is a wealth structuring and documentation tool. It
-                  does not provide financial advice, tax advice, or investment
-                  recommendations. The information you enter and the structures
-                  you create are for your own documentation and planning
-                  purposes only.
+                  Klaris is a structure record, document, and visualisation tool. It does not provide financial advice, tax advice, legal advice, or investment recommendations. The information you enter is for documentation, collaboration, and review with your qualified advisers.
                 </p>
               </div>
             </section>
@@ -294,16 +290,14 @@ export default function PrivacyPage() {
                   encryption with HSTS for all connections.
                 </li>
                 <li>
-                  <strong>Encryption at rest</strong> - AES-256 encryption
-                  for all stored data.
+                  <strong>Stored-data protection</strong> - Managed platform storage controls and field-level encryption for selected sensitive identifiers such as ABN, ACN, and bank details.
                 </li>
                 <li>
                   <strong>Row Level Security (RLS)</strong> - Database-level
                   isolation ensuring users can only access their own data.
                 </li>
                 <li>
-                  <strong>Secure authentication</strong> - Bcrypt password
-                  hashing, email verification, optional 2FA and Google SSO.
+                  <strong>Secure authentication</strong> - Supabase Auth password handling, email verification where applicable, optional authenticator-app MFA, and Google SSO.
                 </li>
               </ul>
 
@@ -311,9 +305,7 @@ export default function PrivacyPage() {
                 Access Controls
               </h3>
               <p className="text-foreground/80">
-                Klaris AI staff have zero visibility into user financial
-                structure data. Our administrative tools only manage platform
-                operations. For full details, please see our{" "}
+                Klaris staff do not have routine access to user financial structure data. Administrative access is role-restricted and used for platform operations, support, security, and audit purposes. For full details, please see our{" "}
                 <Link
                   href="/security"
                   className="text-accent hover:underline"
@@ -349,9 +341,7 @@ export default function PrivacyPage() {
                   emails.
                 </li>
                 <li>
-                  <strong>Google Analytics</strong> - Anonymous usage
-                  analytics. Receives anonymised browsing data only. IP
-                  anonymisation is enabled.
+                  <strong>Google Analytics</strong> - Website and product-usage analytics, subject to cookie consent settings where applicable. Financial structure data is not sent to Google Analytics.
                 </li>
               </ul>
 
@@ -519,9 +509,7 @@ export default function PrivacyPage() {
                 Structure Data Stays in Australia
               </h3>
               <p className="text-foreground/80 mb-6">
-                Your financial structure data (entities, assets, ownership
-                relationships) is stored exclusively on Australian servers and
-                does not leave Australian jurisdiction.
+                Production application data is provisioned in the Australian region. Some account, payment, email, analytics, support, or operational metadata may be processed by subprocessors under their service terms and safeguards.
               </p>
 
               <h3 className="text-lg font-semibold text-primary mb-3">
@@ -551,9 +539,7 @@ export default function PrivacyPage() {
                   Where data is transferred internationally, we ensure that the
                   receiving parties maintain security standards comparable to
                   Australian requirements. Stripe and Resend maintain
-                  industry-standard security controls and certifications. No
-                  financial structure data is included in international
-                  transfers.
+                  industry-standard security controls and certifications. We do not intentionally include client-entered financial structure records in payment or transactional-email messages unless required for support or legal reasons.
                 </p>
               </div>
             </section>

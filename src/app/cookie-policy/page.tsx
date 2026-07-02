@@ -25,11 +25,11 @@ export default function CookiePolicyPage() {
             "@type": "WebPage",
             name: "Cookie Policy",
             description:
-              "How Klaris AI uses cookies and tracking technologies on our website.",
+              "How Klaris uses cookies and tracking technologies on our website.",
             url: `${KLARIS_SITE_URL}/cookie-policy`,
             publisher: {
               "@type": "Organization",
-              name: "Klaris AI",
+              name: "Klaris",
               url: KLARIS_SITE_URL,
             },
             datePublished: "2026-04-01",
@@ -62,7 +62,7 @@ export default function CookiePolicyPage() {
                 <strong>ACN:</strong> 609 221 570
               </p>
               <p className="text-foreground/80">
-                <strong>Trading as:</strong> Klaris AI
+                <strong>Product:</strong> Klaris
               </p>
             </div>
 

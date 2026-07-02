@@ -5,12 +5,12 @@ import ContactClient from "./contact-client";
 export const metadata: Metadata = {
   title: "Contact",
   description:
-    "Contact the Klaris AI team for demos, support, or partnership inquiries. Australian-built wealth planning software.",
+    "Contact the Klaris team for app access, support, or advisor partnership inquiries. Australian-built wealth-structure record software.",
   alternates: { canonical: "https://klaris.com.au/contact" },
   openGraph: {
     title: "Contact | Klaris",
     description:
-      "Contact the Klaris AI team for demos, support, or partnership inquiries. Australian-built wealth planning software.",
+      "Contact the Klaris team for app access, support, or advisor partnership inquiries. Australian-built wealth-structure record software.",
     url: "https://klaris.com.au/contact",
   },
 };
@@ -19,11 +19,11 @@ export default function ContactPage() {
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "ContactPage",
-    name: "Contact Klaris AI",
+    name: "Contact Klaris",
     url: `${KLARIS_SITE_URL}/contact`,
     mainEntity: {
       "@type": "Organization",
-      name: "Klaris AI",
+      name: "Klaris",
       email: KLARIS_EMAIL,
       telephone: KLARIS_PHONE_DISPLAY,
       address: {
