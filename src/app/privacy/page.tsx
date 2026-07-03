@@ -133,12 +133,11 @@ export default function PrivacyPage() {
                 <li>Full name</li>
                 <li>Email address</li>
                 <li>
-                  Password (stored in hashed form - we never store plain
-                  text passwords)
+                  Account authentication information handled through secure authentication systems
                 </li>
                 <li>Account type (Client or Advisor)</li>
                 <li>
-                  Subscription and payment information (processed by Stripe)
+                  Payment or access-arrangement information where paid access applies
                 </li>
               </ul>
 
@@ -192,7 +191,7 @@ export default function PrivacyPage() {
               </h3>
               <p className="text-foreground/80">
                 We use essential cookies to maintain your session and
-                preferences. We also use analytics cookies (Google Analytics) to
+                preferences. We may also use analytics cookies to
                 understand how the Platform is used. You can manage cookie
                 preferences through your browser settings or our cookie consent
                 tool.
@@ -210,11 +209,10 @@ export default function PrivacyPage() {
               <ul className="list-disc pl-6 space-y-2 text-foreground/80 mb-6">
                 <li>Provide and maintain the Platform and its features.</li>
                 <li>
-                  Process your subscription payments through Stripe.
+                  Process paid access arrangements where applicable.
                 </li>
                 <li>
-                  Send transactional emails (account verification, password
-                  resets, security notifications).
+                  Send transactional emails such as account, support, and security notifications.
                 </li>
                 <li>
                   Facilitate advisor-client collaboration when you grant access.
@@ -266,14 +264,14 @@ export default function PrivacyPage() {
               </h2>
 
               <h3 className="text-lg font-semibold text-primary mb-3">
-                Australian Data Residency
+                Australian Client Focus
               </h3>
               <div className="bg-emerald-50 border border-emerald-200 rounded-xl p-6 mb-6">
                 <p className="text-emerald-700">
-                  Production application data is provisioned in the Australian
-                  region. This supports Australian data-residency expectations
-                  while specific hosting and subprocessors are governed by our
-                  policies and service terms.
+                  Klaris is operated for Australian families, advisers, and firms.
+                  Our data-handling approach is designed around the privacy and
+                  confidentiality expectations that apply to sensitive family
+                  wealth records.
                 </p>
               </div>
 
@@ -286,18 +284,16 @@ export default function PrivacyPage() {
               </p>
               <ul className="list-disc pl-6 space-y-2 text-foreground/80 mb-6">
                 <li>
-                  <strong>Encryption in transit</strong> - SSL/TLS
-                  encryption with HSTS for all connections.
+                  <strong>Secure handling</strong> - We use recognised security practices to protect information as it moves through the Platform.
                 </li>
                 <li>
-                  <strong>Stored-data protection</strong> - Managed platform storage controls and field-level encryption for selected sensitive identifiers such as ABN, ACN, and bank details.
+                  <strong>Controlled access</strong> - Access is limited to authorised users and support purposes that are necessary to provide the service.
                 </li>
                 <li>
-                  <strong>Row Level Security (RLS)</strong> - Database-level
-                  isolation ensuring users can only access their own data.
+                  <strong>Operational safeguards</strong> - We use internal controls and review processes to reduce the risk of unauthorised access or misuse.
                 </li>
                 <li>
-                  <strong>Secure authentication</strong> - Supabase Auth password handling, email verification where applicable, optional authenticator-app MFA, and Google SSO.
+                  <strong>Account protection</strong> - Users are expected to keep account credentials secure and report any suspected unauthorised access promptly.
                 </li>
               </ul>
 
@@ -330,18 +326,13 @@ export default function PrivacyPage() {
               </p>
               <ul className="list-disc pl-6 space-y-2 text-foreground/80 mb-6">
                 <li>
-                  <strong>Stripe</strong> - Payment processing (PCI-DSS
-                  Level 1 certified). Receives your payment information only. We
-                  never store card details on our servers.
+                  <strong>Payment providers</strong> - Used where paid access applies. We do not store full card details on our own systems.
                 </li>
                 <li>
-                  <strong>Resend</strong> - Transactional email delivery
-                  (verification, password reset, notifications). Receives your
-                  email address and name only. No financial data is included in
-                  emails.
+                  <strong>Email providers</strong> - Used to send account, support, and security communications.
                 </li>
                 <li>
-                  <strong>Google Analytics</strong> - Website and product-usage analytics, subject to cookie consent settings where applicable. Financial structure data is not sent to Google Analytics.
+                  <strong>Analytics providers</strong> - Used to understand website and product usage, subject to cookie consent settings where applicable. Financial structure data is not used for advertising.
                 </li>
               </ul>
 
@@ -379,8 +370,8 @@ export default function PrivacyPage() {
               <p className="text-foreground/80 mb-6">
                 We retain your data for as long as your account is active and as
                 needed to provide you with the Platform services. Account and
-                financial structure data is maintained throughout your
-                subscription.
+                financial structure data is maintained while your
+                account remains active or as otherwise agreed.
               </p>
 
               <h3 className="text-lg font-semibold text-primary mb-3">
@@ -488,7 +479,7 @@ export default function PrivacyPage() {
                 </li>
                 <li>
                   <strong>Analytics Cookies</strong> - Used to understand
-                  how the Platform is used (Google Analytics). These can be
+                  how the Platform is used. These can be
                   disabled through your browser settings or our cookie consent
                   tool.
                 </li>
@@ -505,41 +496,21 @@ export default function PrivacyPage() {
                 9. International Data Transfers
               </h2>
 
-              <h3 className="text-lg font-semibold text-primary mb-3">
-                Structure Data Stays in Australia
-              </h3>
               <p className="text-foreground/80 mb-6">
-                Production application data is provisioned in the Australian region. Some account, payment, email, analytics, support, or operational metadata may be processed by subprocessors under their service terms and safeguards.
+                Klaris is operated for Australian families, advisers, and firms.
+                Some account, payment, email, analytics, support, or operational
+                metadata may be handled by trusted service providers under
+                contractual and privacy safeguards.
               </p>
 
-              <h3 className="text-lg font-semibold text-primary mb-3">
-                Account Data
-              </h3>
-              <p className="text-foreground/80 mb-4">
-                Limited account-level data may be processed internationally by
-                our service providers:
-              </p>
-              <ul className="list-disc pl-6 space-y-2 text-foreground/80 mb-6">
-                <li>
-                  <strong>Stripe</strong> (USA) - Processes payment
-                  information.
-                </li>
-                <li>
-                  <strong>Resend</strong> (USA) - Processes email
-                  delivery.
-                </li>
-              </ul>
-
-              {/* Safeguards Callout */}
               <div className="bg-emerald-50 border border-emerald-200 rounded-xl p-6">
                 <h4 className="text-lg font-semibold text-emerald-800 mb-2">
                   Safeguards
                 </h4>
                 <p className="text-emerald-700">
-                  Where data is transferred internationally, we ensure that the
-                  receiving parties maintain security standards comparable to
-                  Australian requirements. Stripe and Resend maintain
-                  industry-standard security controls and certifications. We do not intentionally include client-entered financial structure records in payment or transactional-email messages unless required for support or legal reasons.
+                  Where trusted providers are used, we expect appropriate security
+                  and confidentiality controls and keep the focus on protecting
+                  sensitive family wealth information.
                 </p>
               </div>
             </section>

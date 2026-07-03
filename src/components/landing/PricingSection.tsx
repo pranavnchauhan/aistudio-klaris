@@ -64,7 +64,7 @@ export default function PricingSection() {
           </Button>
 
           <p className="mt-4 text-center text-xs text-muted-foreground">
-            Direct client subscriptions and advisor-sponsored access are supported in the app; firm pricing is confirmed before rollout.
+            Access, pilot scope, and firm rollout pricing are confirmed privately before onboarding.
           </p>
         </div>
       </div>

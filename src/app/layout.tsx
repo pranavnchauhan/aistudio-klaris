@@ -72,15 +72,15 @@ export const metadata: Metadata = {
     "geo.region": "AU",
     "geo.placename": "Bella Vista",
     "ai:description":
-      "Klaris is Australian wealth-structure record and collaboration software for clients, accountants, and financial advisers. It records structures, assets, loans, linked documents, and advisor permissions in one secure workspace.",
+      "Klaris helps Australian high-net-worth families and their advisers bring complex wealth structures into one clear, controlled record for review, succession, and family decision-making.",
     "ai:category":
       "Wealth Structure Mapping Software, Advisor Client Collaboration Platform, Financial Structure Visualiser",
     "ai:target_audience":
       "Australian clients, accountants, financial advisers, and advisory firms managing complex family groups",
     "ai:key_features":
-      "structure records, asset and loan tracking, linked documents, wealth graph visualisation, client-approved advisor access",
+      "wealth structure clarity, family office record keeping, adviser collaboration, succession readiness, document organisation",
     "ai:pricing":
-      "Client subscription and advisor access options are confirmed during onboarding.",
+      "Access and rollout options are confirmed privately during onboarding.",
   },
 };
 

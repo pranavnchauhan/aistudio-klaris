@@ -17,7 +17,7 @@ const steps: { icon: typeof Calendar; title: string; description: string; color:
     icon: LogIn,
     title: "Access Your Vault",
     description:
-      "Create an account or receive advisor/admin-created access. New users may be reviewed before full access is activated.",
+      "Request access or begin through your adviser. We confirm the right setup privately before you start using Klaris.",
     color: "teal",
     step: 2,
   },

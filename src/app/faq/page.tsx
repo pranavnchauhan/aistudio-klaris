@@ -94,7 +94,7 @@ const faqSections: FaqSection[] = [
         question:
           "Can multiple advisers and firms collaborate on the same client structures?",
         answer: [
-          "Yes. Klaris supports controlled advisor collaboration. Clients can invite trusted advisors with view-only or full-access permissions, and advisor-sponsored client accounts are supported. Broader family or legal-team access should be planned during onboarding.",
+          "Yes. Klaris supports controlled collaboration with trusted advisers. The goal is to give the right professionals a shared view of the family structure while keeping access intentional and governed. Broader family or legal-team involvement should be planned during onboarding.",
         ],
       },
       {
@@ -119,14 +119,14 @@ const faqSections: FaqSection[] = [
       {
         question: "Where is Klaris hosted and where is data stored?",
         answer: [
-          "Klaris production data is provisioned in the Australian region. This supports data-residency expectations for Australian professional services firms, while specific hosting and subprocessors are described in our policies and service terms.",
+          "Klaris is operated for Australian clients and designed with Australian privacy and professional-services expectations in mind. Detailed operational arrangements are handled privately through our policies and onboarding process.",
         ],
       },
       {
         question:
           "How does Klaris secure sensitive financial and personal information?",
         answer: [
-          "Connections to Klaris are encrypted in transit with modern TLS. Sensitive identifiers such as ABN, ACN, and bank details are encrypted before storage, and access is protected with authentication, Supabase row-level security, masked advisor views, and explicit advisor permissions.",
+          "Klaris uses privacy-led safeguards, controlled access, and secure handling practices so sensitive family wealth information is only available to authorised people for legitimate purposes.",
         ],
       },
       {
@@ -171,13 +171,13 @@ const faqSections: FaqSection[] = [
       {
         question: "Do high net worth clients sign up directly with Klaris?",
         answer: [
-          "Klaris supports both direct client accounts and advisor-sponsored clients. During rollout, new accounts may require admin review, and firms can bring Klaris to clients as part of their service model.",
+          "Klaris supports both family-led and adviser-led rollout models. During onboarding, we confirm the most appropriate way for the family, accountant, adviser, or family office to use Klaris together.",
         ],
       },
       {
         question: "Can family members and successors use Klaris?",
         answer: [
-          "The live app currently focuses on client, advisor, and admin roles. Families can use Klaris through the client account and trusted advisor access workflows; broader family-member access should be planned with Klaris during onboarding.",
+          "Families can use Klaris with their trusted advisers to create a clearer shared record. Broader family-member or legal-team involvement should be planned with Klaris during onboarding so access stays appropriate.",
         ],
       },
       {
@@ -195,14 +195,14 @@ const faqSections: FaqSection[] = [
       {
         question: "How does Klaris pricing work for firms?",
         answer: [
-          "Klaris pricing is confirmed during onboarding based on the rollout model, direct client subscriptions, advisor-sponsored access, and the number and complexity of client groups involved.",
+          "Klaris pricing is confirmed privately during onboarding based on the rollout model, the number and complexity of client groups, and the level of support required.",
         ],
       },
       {
         question:
           "Do you have special pricing for accountants and advisers?",
         answer: [
-          "Yes. Klaris is built to work with accountants and financial advisers, including advisor-sponsored client access. We discuss partnership-oriented pricing, pilots, and rollout terms directly with qualified firms before production onboarding.",
+          "Yes. Klaris is built to work with accountants, financial advisers, and family offices. We discuss partnership-oriented pricing, pilots, and rollout terms directly with qualified firms before onboarding.",
         ],
       },
       {

@@ -251,21 +251,20 @@ export default function ContactClient() {
                   </CardTitle>
                   <CardDescription>
                     Accountants, financial planners, and solicitors: Klaris
-                    supports firm rollouts, advisor dashboards, and sponsored client access.
+                    supports family office rollouts, adviser collaboration, and HNW client onboarding.
                   </CardDescription>
                 </CardHeader>
                 <CardContent className="space-y-4">
                   <div className="flex items-start gap-3">
                     <Briefcase className="h-5 w-5 text-primary mt-0.5 shrink-0" />
                     <p className="text-sm text-muted-foreground">
-                      Multi-client advisor dashboards, client-approved access levels,
-                      advisor-sponsored client accounts, and dedicated onboarding support.
+                      Clear family wealth maps, adviser collaboration workflows, and dedicated onboarding support for complex client groups.
                     </p>
                   </div>
                   <div className="rounded-md bg-primary/5 border border-primary/20 px-4 py-3">
                     <p className="text-sm font-medium text-primary">Guided demo or pilot</p>
                     <p className="text-sm text-muted-foreground mt-0.5">
-                      Pricing, advisor licensing, and pilot terms are confirmed with each firm before production rollout.
+                      Pilot scope, rollout approach, and commercial terms are confirmed privately before onboarding.
                     </p>
                   </div>
                   <Button variant="outline" className="w-full" asChild>

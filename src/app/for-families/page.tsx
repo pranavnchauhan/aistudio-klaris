@@ -51,7 +51,7 @@ const faqItems: FaqItem[] = [
     question:
       "Can I see everything in my family's structure, or only certain parts?",
     answer:
-      "Klaris currently supports client and advisor access. Clients can invite trusted advisors with view-only or full-access permissions; broader family access should be planned with your advisor as the platform rollout expands.",
+      "Klaris is designed for families to work with trusted advisers around one clearer structure record. Broader family access should be planned with your adviser during onboarding so the right people see the right information.",
   },
   {
     question: "Does Klaris give financial or legal advice?",
@@ -61,7 +61,7 @@ const faqItems: FaqItem[] = [
   {
     question: "Is our family's financial information secure?",
     answer:
-      "Klaris protects traffic with HTTPS/TLS, encrypts sensitive identifiers such as ABN, ACN, and bank details, and uses role-based access controls, Supabase row-level security, and advisor access revocation. Klaris is designed with Australian privacy obligations in mind.",
+      "Klaris is designed with Australian privacy expectations in mind, using secure handling practices and controlled access so sensitive family wealth information is only available to appropriate people.",
   },
   {
     question: "What if our accountant or adviser doesn't use Klaris yet?",
@@ -274,7 +274,7 @@ export default function ForFamiliesPage() {
                 Shared access for the whole family
               </h3>
               <p className="text-sm text-muted-foreground text-center">
-                Invite trusted advisors with view-only or full-access permissions.
+                Bring trusted advisers into the conversation with access planned around your family’s needs.
                 Broader family access should be handled through your rollout plan.
               </p>
             </div>
@@ -357,9 +357,7 @@ export default function ForFamiliesPage() {
             Klaris is built in Australia for Australian structure records. The platform supports Australian discretionary trusts, unit trusts, self-managed super funds, companies, personal holdings, assets, loans, documents, and advisor access workflows rather than generic global templates.
           </p>
           <p className="text-muted-foreground">
-            Production data is provisioned in the Australian region and managed with
-            Australian privacy obligations in mind. Klaris is operated by Krrisp
-            Pty Ltd (ABN 38 609 221 570), an Australian company.
+            Klaris is operated by an Australian company and designed for Australian family groups, with privacy-led handling and onboarding practices suited to sensitive wealth records.
           </p>
         </div>
       </section>

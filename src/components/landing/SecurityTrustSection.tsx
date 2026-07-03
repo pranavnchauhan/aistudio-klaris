@@ -8,9 +8,9 @@ import { useInView } from "@/hooks/use-in-view";
 const securityFeatures: { icon: typeof Shield; title: string; description: string; color: IconColor }[] = [
   {
     icon: Shield,
-    title: "Sensitive-Field Encryption",
+    title: "Sensitive Information Protection",
     description:
-      "Traffic is protected with HTTPS/TLS, and sensitive identifiers such as ABN, ACN, and bank details are encrypted before storage.",
+      "Klaris is designed to protect sensitive family wealth information with protected connections, careful access controls, and privacy-led handling.",
     color: "blue",
   },
   {
@@ -24,7 +24,7 @@ const securityFeatures: { icon: typeof Shield; title: string; description: strin
     icon: MapPin,
     title: "Australian Data Residency",
     description:
-      "Production data is provisioned in the Australian region, with Supabase row-level security and masked views controlling access.",
+      "Klaris is operated for Australian clients, with data handling and operational processes designed around Australian privacy expectations.",
     color: "emerald",
   },
 ];
@@ -40,7 +40,7 @@ export default function SecurityTrustSection() {
             Security & Trust
           </p>
           <h2 className="text-3xl font-bold text-primary sm:text-4xl text-center">
-            Data protection built around access controls
+            Data protection built around controlled access
           </h2>
         </div>
 
@@ -81,9 +81,7 @@ export default function SecurityTrustSection() {
             Zero Routine Staff Visibility
           </h3>
           <p className="text-muted-foreground max-w-xl mx-auto leading-relaxed text-center">
-            Klaris uses admin role checks and audit logs for sensitive operational actions.
-            Admin client data view-ins are logged, and routine support should not require access
-            to your wealth records unless a support issue specifically needs it.
+            Klaris is designed so your family wealth records are only accessed for legitimate service, support, or security reasons. The aim is simple: protect the record while keeping it useful for the people you authorise.
           </p>
         </div>
       </div>

@@ -192,7 +192,7 @@ export default function TermsPage() {
                 <li>Track assets and their ownership relationships.</li>
                 <li>Record beneficiary and trustee information.</li>
                 <li>
-                  Collaborate with invited advisors using view-only or full-access permissions.
+                  Collaborate with trusted advisers around a shared family wealth record.
                 </li>
                 <li>
                   Store linked documents for structures and assets.
@@ -236,8 +236,7 @@ export default function TermsPage() {
                   Can create, edit, and delete their structures and entities.
                 </li>
                 <li>
-                  Can invite up to 2 advisors to collaborate on their
-                  structures.
+                  Can involve trusted advisers in the structure record where appropriate.
                 </li>
                 <li>
                   Can request assistance with data access or export.
@@ -257,10 +256,10 @@ export default function TermsPage() {
               </p>
               <ul className="list-disc pl-6 space-y-2 text-foreground/80 mb-6">
                 <li>
-                  Can access client structures when explicitly invited by the client or when a sponsored client account is created through the advisor workflow.
+                  Can access client structure information where the client or firm has authorised that collaboration.
                 </li>
                 <li>
-                  Receive read-only or edit access as determined by the client.
+                  Receive an appropriate level of access based on the agreed adviser relationship and onboarding model.
                 </li>
                 <li>
                   Must maintain appropriate professional qualifications.
@@ -272,13 +271,13 @@ export default function TermsPage() {
               </ul>
 
               <h3 className="text-lg font-semibold text-primary mb-3">
-                Collaboration Limits
+                Collaboration Governance
               </h3>
               <p className="text-foreground/80">
-                Each client account can have a maximum of 2 advisors connected
-                at any time. This limit exists to maintain data security and
-                manage access complexity. Clients must remove an existing
-                advisor before adding a new one if the limit has been reached.
+                Collaboration is intended to remain controlled and purposeful.
+                Families and firms should only involve advisers or professional
+                contacts who have a legitimate role in reviewing or maintaining
+                the structure record.
               </p>
             </section>
 
@@ -289,28 +288,22 @@ export default function TermsPage() {
               </h2>
 
               <h3 className="text-lg font-semibold text-primary mb-3">
-                Email Verification
+                Account Access
               </h3>
               <p className="text-foreground/80 mb-6">
-                Public signups may require email verification and admin approval before full access is granted. Admin-created and advisor-sponsored users may receive temporary credentials. You must use a valid email address that you have access to because we may send security-related notifications to this email address.
+                Account access may be reviewed, approved, or configured as part
+                of onboarding. You must use a valid email address that you can
+                access because we may send account, support, or security-related
+                notices to that address.
               </p>
 
               <h3 className="text-lg font-semibold text-primary mb-3">
-                Password Requirements
+                Account Security
               </h3>
               <p className="text-foreground/80 mb-6">
-                Public signup passwords must meet the requirements shown in the app. Admin-created temporary passwords require stronger complexity and must be changed at first login. You are responsible for maintaining the security of your password and must not share it with anyone.
-              </p>
-
-              <h3 className="text-lg font-semibold text-primary mb-3">
-                Two-Factor Authentication (2FA)
-              </h3>
-              <p className="text-foreground/80 mb-6">
-                Two-factor authentication is available and recommended for all
-                accounts. Advisor accounts are strongly encouraged to enable 2FA
-                due to the elevated access they may have to client data. Google
-                Single Sign-On (SSO) is also available as an alternative
-                authentication method.
+                You are responsible for maintaining the security of your account
+                credentials and must not share access with anyone who is not
+                authorised to view the relevant family wealth information.
               </p>
 
               <h3 className="text-lg font-semibold text-primary mb-3">
@@ -333,7 +326,7 @@ export default function TermsPage() {
                 Plans
               </h3>
               <p className="text-foreground/80 mb-6">
-                The Platform supports direct client subscriptions and advisor-sponsored access. Pricing, advisor licensing, firm arrangements, and any demo access are confirmed during onboarding or displayed in the Platform where applicable. All paid prices are in Australian Dollars (AUD) and include GST where applicable.
+                The Platform may be offered through family, adviser, firm, pilot, or other agreed access arrangements. Pricing, scope, and support expectations are confirmed privately before paid access begins. All paid prices are in Australian Dollars (AUD) and include GST where applicable.
               </p>
 
               <h3 className="text-lg font-semibold text-primary mb-3">
@@ -351,22 +344,14 @@ export default function TermsPage() {
                 Payment Processing
               </h3>
               <p className="text-foreground/80 mb-6">
-                All payments are processed securely by Stripe, a PCI-DSS Level
-                1 certified payment processor. We do not store, process, or have
-                access to your full credit card or payment details. Your payment
-                information is handled entirely by Stripe&apos;s secure
-                infrastructure.
+                Payments, where applicable, are processed through a secure third-party payment provider. We do not store or have access to your full credit card details.
               </p>
 
               <h3 className="text-lg font-semibold text-primary mb-3">
                 Failed Payments
               </h3>
               <p className="text-foreground/80 mb-6">
-                If a subscription payment fails, we will attempt to process the
-                payment again. If payment cannot be collected after multiple
-                attempts, your account may be downgraded or suspended until
-                payment is resolved. We will notify you via email before any
-                account changes due to payment issues.
+                If a payment fails, we may attempt to process the payment again or contact you to resolve the issue. Access may be suspended or adjusted if payment remains unresolved.
               </p>
 
               <h3 className="text-lg font-semibold text-primary mb-3">
@@ -374,7 +359,7 @@ export default function TermsPage() {
               </h3>
               <p className="text-foreground/80 mb-6">
                 Refunds are handled on a case-by-case basis. We do not provide
-                refunds for partial months of subscription. If you believe a
+                refunds for part-used paid periods. If you believe a
                 charge was made in error, contact us within 14 days. Refunds
                 may be considered at our discretion. To request a refund, contact us
                 at{" "}
@@ -392,10 +377,10 @@ export default function TermsPage() {
               </h3>
               <p className="text-foreground/80 mb-6">
                 We may change our pricing from time to time. Existing
-                subscribers will be given at least 30 days&apos; notice of any
-                price increase. Price changes will take effect at the start of
-                the next billing cycle following the notice period. If you do
-                not agree to a price change, you may cancel your subscription
+                paid users or firms will be given at least 30 days&apos; notice of any
+                material price increase. Price changes will take effect at the start of
+                the next paid period following the notice period. If you do
+                not agree to a price change, you may cancel your paid access
                 before the change takes effect.
               </p>
 
@@ -403,7 +388,7 @@ export default function TermsPage() {
                 Advisory Firm Licensing
               </h3>
               <p className="text-foreground/80">
-                Advisory firms requiring multiple advisor accounts or sponsored client access should contact us for current onboarding and licensing arrangements. We will confirm the applicable billing, access model, and account management process before activation.
+                Advisory firms, family offices, or professional groups should contact us for current onboarding and licensing arrangements. We will confirm the applicable commercial model and account management process before activation.
               </p>
             </section>
 
@@ -555,7 +540,7 @@ export default function TermsPage() {
                 logos, and trademarks, is the intellectual property of Krrisp Pty
                 Ltd. You are granted a limited, non-exclusive, non-transferable
                 licence to use the Platform for its intended purpose during your
-                subscription.
+                paid access.
               </p>
               <p className="text-foreground/80">
                 You may not copy, modify, distribute, reverse engineer, or
@@ -740,9 +725,9 @@ export default function TermsPage() {
                 By You
               </h3>
               <p className="text-foreground/80 mb-6">
-                You may cancel your subscription and close your account at any
+                You may cancel your paid access and close your account at any
                 time. Upon cancellation, you will retain access until the end of
-                your current billing period. You can export your data before
+                the current paid period. You can export your data before
                 account closure.
               </p>
 
@@ -758,7 +743,7 @@ export default function TermsPage() {
                   You engage in prohibited uses as outlined in Section 7.
                 </li>
                 <li>
-                  Your subscription payment cannot be collected after
+                  Your payment cannot be collected after
                   reasonable attempts.
                 </li>
                 <li>
@@ -779,7 +764,7 @@ export default function TermsPage() {
               </h3>
               <p className="text-foreground/80">
                 Upon termination, your right to access the Platform ceases
-                immediately (or at the end of the billing period for voluntary
+                immediately (or at the end of the paid period for voluntary
                 cancellation). We will retain your data for 90 days to allow
                 recovery if the termination was unintentional. After 90 days,
                 financial structure data will be permanently deleted in
@@ -848,7 +833,7 @@ export default function TermsPage() {
                 </li>
                 <li>
                   If you do not agree to the updated Terms, you may cancel your
-                  subscription before the changes take effect.
+                  paid access before the changes take effect.
                 </li>
               </ul>
             </section>

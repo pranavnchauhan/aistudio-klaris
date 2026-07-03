@@ -6,14 +6,14 @@ import { KLARIS_EMAIL, KLARIS_SITE_URL } from "@/lib/constants";
 export const metadata: Metadata = {
   title: "Data Security",
   description:
-    "Klaris Data Security Policy. Sensitive-field encryption, Australian-region provisioning, row-level access controls, admin audit logging, and advisor permission controls.",
+    "Klaris Data Security Policy. Privacy-led controls for sensitive Australian family wealth information and adviser collaboration.",
   alternates: {
     canonical: "https://klaris.com.au/security",
   },
   openGraph: {
     title: "Data Security | Klaris",
     description:
-      "Klaris Data Security Policy. Sensitive-field encryption, Australian-region provisioning, row-level access controls, admin audit logging, and advisor permission controls.",
+      "Klaris Data Security Policy. Privacy-led controls for sensitive Australian family wealth information and adviser collaboration.",
     url: "https://klaris.com.au/security",
   },
 };
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
 const sections = [
   { id: "about", label: "1. About This Policy" },
   { id: "data-storage", label: "2. Data Storage and Infrastructure" },
-  { id: "encryption", label: "3. Encryption" },
+  { id: "protection", label: "3. Information Protection" },
   { id: "authentication", label: "4. Authentication and Access Control" },
   { id: "access-controls", label: "5. Access Controls and Permissions" },
   { id: "third-party", label: "6. Third-Party Security" },
@@ -44,7 +44,7 @@ export default function SecurityPage() {
             "@type": "WebPage",
             name: "Data Security Policy",
             description:
-              "Klaris Data Security Policy. Sensitive-field encryption, Australian-region provisioning, row-level access controls, admin audit logging, and advisor permission controls.",
+              "Klaris Data Security Policy. Privacy-led controls for sensitive Australian family wealth information and adviser collaboration.",
             url: `${KLARIS_SITE_URL}/security`,
             publisher: {
               "@type": "Organization",
@@ -128,91 +128,47 @@ export default function SecurityPage() {
                   Australian Data Residency
                 </h3>
                 <p className="text-emerald-700">
-                  Production data is provisioned in the Australian region. This supports
-                  Australian data-residency expectations while specific providers
-                  and subprocessors remain governed by our policies and service terms.
+                  Klaris is operated for Australian families and advisers. Our data-handling approach is designed around the privacy and confidentiality expectations that apply to sensitive family wealth records.
                 </p>
               </div>
-
               <h3 className="text-lg font-semibold text-primary mb-3">
-                Infrastructure Provider
+                Controlled Records
               </h3>
               <p className="text-foreground/80 mb-4">
-                Our platform runs on managed cloud infrastructure. Production application
-                data is provisioned within the Australian region.
-              </p>
-
-              <h3 className="text-lg font-semibold text-primary mb-3">
-                Data Segregation
-              </h3>
-              <p className="text-foreground/80 mb-4">
-                Each user&apos;s data is logically segregated at the database
-                level using row-level access controls. This means:
+                Klaris is designed to keep sensitive family wealth information
+                organised, private, and available only to appropriate people.
+                This means:
               </p>
               <ul className="list-disc pl-6 space-y-2 text-foreground/80">
-                <li>
-                  Each user can only access their own financial structure data.
-                </li>
-                <li>
-                  Advisors can only access data for clients who have explicitly
-                  granted them access.
-                </li>
-                <li>
-                  Database queries are automatically filtered to prevent
-                  cross-user data access.
-                </li>
-                <li>
-                  Admin access is role-restricted and sensitive admin actions are logged,
-                  including admin view-ins to client wealth records.
-                </li>
+                <li>Families and advisers work from one clearer structure record.</li>
+                <li>Access is intended to be granted only where there is a legitimate family, adviser, or support purpose.</li>
+                <li>Operational access is limited to what is needed to provide, support, and protect the service.</li>
+                <li>Data handling is guided by confidentiality, privacy, and Australian professional-services expectations.</li>
               </ul>
             </section>
 
             {/* 3. Encryption */}
-            <section id="encryption" className="mb-12">
+            <section id="protection" className="mb-12">
               <h2 className="text-2xl font-bold text-primary mb-4">
-                3. Encryption
+                3. Information Protection
               </h2>
 
-              <h3 className="text-lg font-semibold text-primary mb-3">
-                Data in Transit
-              </h3>
               <p className="text-foreground/80 mb-4">
-                All data transmitted between your browser and our servers is
-                encrypted using:
-              </p>
-              <ul className="list-disc pl-6 space-y-2 text-foreground/80 mb-6">
-                <li>
-                  <strong>SSL/TLS encryption</strong> - All connections
-                  use HTTPS with TLS 1.2 or higher.
-                </li>
-                <li>
-                  <strong>HSTS (HTTP Strict Transport Security)</strong> -
-                  Browsers are instructed to only connect via HTTPS, preventing
-                  downgrade attacks.
-                </li>
-                <li>
-                  API calls between our frontend and backend services are
-                  encrypted end-to-end.
-                </li>
-              </ul>
-
-              <h3 className="text-lg font-semibold text-primary mb-3">
-                Data at Rest
-              </h3>
-              <p className="text-foreground/80 mb-4">
-                Sensitive data is protected through platform-level encryption and additional field-level encryption for selected identifiers:
+                Klaris avoids publishing detailed security architecture on the
+                public website. At a practical level, our approach focuses on:
               </p>
               <ul className="list-disc pl-6 space-y-2 text-foreground/80">
                 <li>
-                  <strong>Field-level encryption</strong> - Sensitive identifiers such
-                  as ABN, ACN, and bank details are encrypted before storage.
+                  <strong>Secure connections</strong> - Protecting information as it moves between users and the Platform.
                 </li>
                 <li>
-                  The managed database platform also provides storage-level encryption controls.
+                  <strong>Access control</strong> - Limiting sensitive records to authorised users and legitimate service purposes.
                 </li>
                 <li>
-                  Application encryption keys are held server-side and are not exposed in the browser.
+                  <strong>Operational safeguards</strong> - Using internal controls, support procedures, and review practices to reduce unauthorised access risk.
+                </li>
+                <li>
+                  <strong>Data minimisation</strong> - Avoiding unnecessary collection of highly sensitive information where it is not needed for the service.
                 </li>
               </ul>
             </section>
@@ -220,60 +176,19 @@ export default function SecurityPage() {
             {/* 4. Authentication and Access Control */}
             <section id="authentication" className="mb-12">
               <h2 className="text-2xl font-bold text-primary mb-4">
-                4. Authentication and Access Control
+                4. Account Access
               </h2>
 
-              <h3 className="text-lg font-semibold text-primary mb-3">
-                Password Requirements
-              </h3>
-              <ul className="list-disc pl-6 space-y-2 text-foreground/80 mb-6">
-                <li>
-                  Public signup requires at least 8 characters with a number and special character. Admin-created temporary passwords require stronger complexity before first login.
-                </li>
-                <li>Passwords are handled by Supabase Auth and are never stored by Klaris in plain text.</li>
-                <li>We never store passwords in plain text.</li>
-              </ul>
-
-              <h3 className="text-lg font-semibold text-primary mb-3">
-                Email Verification
-              </h3>
-              <p className="text-foreground/80 mb-6">
-                Public signups may require email verification and admin approval before full access is activated. Admin-created and advisor-sponsored users may receive temporary credentials and must change their password at first login.
+              <p className="text-foreground/80 mb-4">
+                Klaris accounts are intended for authorised users only. Access may
+                be reviewed or configured during onboarding so that the right
+                family members, advisers, or support contacts are involved.
               </p>
-
-              <h3 className="text-lg font-semibold text-primary mb-3">
-                Two-Factor Authentication (2FA) and Google SSO
-              </h3>
-              <ul className="list-disc pl-6 space-y-2 text-foreground/80 mb-6">
-                <li>
-                  Authenticator-app MFA is offered during the forced password-change flow and can be enabled by users.
-                </li>
-                <li>
-                  Google Single Sign-On (SSO) is available as an alternative
-                  authentication method, leveraging Google&apos;s security
-                  infrastructure.
-                </li>
-                <li>
-                  Advisor accounts are strongly encouraged to enable 2FA due to
-                  the elevated access they may have to client data.
-                </li>
-              </ul>
-
-              <h3 className="text-lg font-semibold text-primary mb-3">
-                Session Management
-              </h3>
               <ul className="list-disc pl-6 space-y-2 text-foreground/80">
-                <li>
-                  Sessions are managed by Supabase Auth using secure token-based session handling.
-                </li>
-                <li>
-                  Sessions expire after a period of inactivity to reduce the
-                  risk of unauthorised access.
-                </li>
-                <li>
-                  Users can manually sign out to terminate their session at any
-                  time.
-                </li>
+                <li>Users should use strong, unique credentials.</li>
+                <li>Access should not be shared with unauthorised people.</li>
+                <li>Adviser access should be reviewed when professional relationships change.</li>
+                <li>Suspected unauthorised access should be reported promptly.</li>
               </ul>
             </section>
 
@@ -283,59 +198,18 @@ export default function SecurityPage() {
                 5. Access Controls and Permissions
               </h2>
 
-              <h3 className="text-lg font-semibold text-primary mb-3">
-                Client Access
-              </h3>
-              <p className="text-foreground/80 mb-6">
-                Clients have full control over their own financial structure
-                data. Clients can view, create, edit, and delete their own
-                structures, assets, loans, and linked documents. Clients can grant
-                or revoke advisor access at any time.
-              </p>
-
-              <h3 className="text-lg font-semibold text-primary mb-3">
-                Advisor Access
-              </h3>
               <p className="text-foreground/80 mb-4">
-                Advisors can access client data when explicitly invited by the client or
-                when a sponsored client account is created through the advisor workflow:
+                Klaris is built around controlled collaboration. A high-net-worth
+                family may need accountants, financial advisers, lawyers, and family
+                office contacts to work from the same picture, but not every person
+                should automatically see everything.
               </p>
               <ul className="list-disc pl-6 space-y-2 text-foreground/80 mb-6">
-                <li>
-                  Advisors receive read-only or edit access as determined by the
-                  client.
-                </li>
-                <li>
-                  Access can be revoked by the client at any time, effective
-                  immediately.
-                </li>
-                <li>
-                  Advisors cannot share client data with other advisors or third
-                  parties.
-                </li>
+                <li>Families should decide which advisers need access to the structure record.</li>
+                <li>Advisers should only use client information for legitimate professional purposes.</li>
+                <li>Access should be reviewed as advisers, family roles, or structures change.</li>
+                <li>Support access is intended to be limited to what is necessary to resolve a service issue.</li>
               </ul>
-
-              <h3 className="text-lg font-semibold text-primary mb-3">
-                Advisor Collaboration Limits
-              </h3>
-              <p className="text-foreground/80 mb-6">
-                Each client account can have a maximum of 2 advisors connected
-                at any time. This limit exists to maintain data security and
-                minimise the risk of unauthorised access. Clients must remove an
-                existing advisor before adding a new one if the limit is
-                reached.
-              </p>
-
-              <h3 className="text-lg font-semibold text-primary mb-3">
-                Internal Access
-              </h3>
-              <p className="text-foreground/80">
-                Our systems are designed so that Klaris staff do not have
-                routine access to user financial structure data. Administrative
-                tools manage platform operations (account status, subscription
-                management, technical support) without exposing financial data
-                entered by users. Admin client data view-ins are logged. In the event of a technical incident, our response team may access the minimum data necessary to resolve the issue. Database access is restricted to essential maintenance operations.
-              </p>
             </section>
 
             {/* 6. Third-Party Security */}
@@ -344,64 +218,16 @@ export default function SecurityPage() {
                 6. Third-Party Security
               </h2>
               <p className="text-foreground/80 mb-4">
-                We use a limited number of third-party services, each selected
-                for their security standards:
+                Klaris uses trusted service providers where needed for payments,
+                communications, analytics, hosting, support, or security. We do
+                not publish the full operational stack on the public website.
               </p>
-
-              <div className="space-y-4">
-                <div className="bg-secondary/20 rounded-lg p-4">
-                  <h3 className="font-semibold text-primary mb-2">
-                    Stripe (Payment Processing)
-                  </h3>
-                  <ul className="list-disc pl-6 space-y-1 text-foreground/80">
-                    <li>
-                      PCI-DSS Level 1 certified - the highest level of
-                      payment security certification.
-                    </li>
-                    <li>
-                      We never store, process, or transmit credit card numbers
-                      on our servers.
-                    </li>
-                    <li>
-                      All payment data is handled directly by Stripe&apos;s
-                      secure infrastructure.
-                    </li>
-                  </ul>
-                </div>
-
-                <div className="bg-secondary/20 rounded-lg p-4">
-                  <h3 className="font-semibold text-primary mb-2">
-                    Resend (Email Communications)
-                  </h3>
-                  <ul className="list-disc pl-6 space-y-1 text-foreground/80">
-                    <li>
-                      Used for transactional emails (verification, password
-                      reset, notifications).
-                    </li>
-                    <li>
-                      Emails are sent over encrypted connections.
-                    </li>
-                    <li>
-                      No financial structure data is included in emails.
-                    </li>
-                  </ul>
-                </div>
-
-                <div className="bg-secondary/20 rounded-lg p-4">
-                  <h3 className="font-semibold text-primary mb-2">
-                    Google Analytics
-                  </h3>
-                  <ul className="list-disc pl-6 space-y-1 text-foreground/80">
-                    <li>
-                      Used for anonymous website usage analytics only.
-                    </li>
-                    <li>
-                      No personal financial data is sent to Google Analytics.
-                    </li>
-                    <li>IP anonymisation is enabled.</li>
-                  </ul>
-                </div>
-              </div>
+              <p className="text-foreground/80">
+                Where providers are used, our focus is to limit unnecessary data
+                sharing and to keep sensitive family wealth records separate from
+                routine payment, analytics, and communications activity unless
+                disclosure is required for support, legal, or service reasons.
+              </p>
             </section>
 
             {/* 7. Security Monitoring and Incident Response */}
@@ -465,8 +291,8 @@ export default function SecurityPage() {
                 a shared responsibility. We recommend that all users:
               </p>
               <ul className="list-disc pl-6 space-y-2 text-foreground/80">
-                <li>Use a strong, unique password for your Klaris account.</li>
-                <li>Enable two-factor authentication (2FA).</li>
+                <li>Use strong, unique account credentials for your Klaris account.</li>
+                <li>Use any additional account-security controls offered during onboarding.</li>
                 <li>
                   Do not share your login credentials with anyone.
                 </li>
@@ -512,7 +338,7 @@ export default function SecurityPage() {
                 </li>
                 <li>
                   <strong>APP 8 (Cross-border Disclosure)</strong> -
-                  Production application data is provisioned in the Australian region. Where account-level, payment, email, analytics, support, or operational metadata is processed by subprocessors, we use appropriate safeguards and contractual controls.
+                  Where account-level, payment, email, analytics, support, or operational metadata is processed by trusted providers, we use appropriate safeguards and contractual controls.
                 </li>
                 <li>
                   <strong>Notifiable Data Breaches Scheme</strong> - We
@@ -528,14 +354,14 @@ export default function SecurityPage() {
                 10. Limitations
               </h2>
               <p className="text-foreground/80 mb-4">
-                While we implement industry-standard security measures, no
+                While we implement security measures, no
                 system can guarantee absolute security. We cannot be held liable
                 for:
               </p>
               <ul className="list-disc pl-6 space-y-2 text-foreground/80">
                 <li>
                   Unauthorised access resulting from user actions (e.g., sharing
-                  credentials, weak passwords, compromised devices).
+                  shared credentials, weak account practices, compromised devices).
                 </li>
                 <li>
                   Security breaches at third-party providers despite their own

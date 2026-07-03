@@ -30,7 +30,7 @@ const benefits: { icon: typeof Eye; title: string; description: string; color: I
     icon: ShieldCheck,
     title: "Reduced Risk",
     description:
-      "Spot missing ABNs, missing documents, and unclear ownership records earlier in the review process.",
+      "Spot missing documents, unclear ownership records, and unresolved structure questions earlier in the review process.",
     color: "emerald",
   },
   {

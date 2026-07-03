@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 import { KLARIS_EMAIL, KLARIS_PHONE_DISPLAY, KLARIS_PHONE_TEL, KLARIS_SITE_URL } from "@/lib/constants";
 
 const sections = [
-  { id: "subscription-model", label: "1. Subscription Model" },
+  { id: "access-model", label: "1. Access Model" },
   { id: "cancellation", label: "2. Cancellation" },
   { id: "no-partial-refunds", label: "3. No Refunds for Partial Months" },
   { id: "price-changes", label: "4. Price Changes" },
@@ -26,7 +26,7 @@ export default function RefundPolicyPage() {
             "@type": "WebPage",
             name: "Refund & Cancellation Policy",
             description:
-              "Refund and cancellation policy for Klaris subscriptions and paid app access.",
+              "Refund and cancellation policy for paid Klaris access arrangements.",
             url: `${KLARIS_SITE_URL}/refund-policy`,
             publisher: {
               "@type": "Organization",
@@ -91,13 +91,13 @@ export default function RefundPolicyPage() {
               </ol>
             </nav>
 
-            {/* 1. Subscription Model */}
-            <section id="subscription-model" className="mb-12">
+            {/* 1. Access Model */}
+            <section id="access-model" className="mb-12">
               <h2 className="text-2xl font-bold text-primary mb-4">
-                1. Subscription Model
+                1. Access Model
               </h2>
               <p className="text-foreground/80">
-                Klaris direct client access is offered on a subscription basis, with fees billed via Stripe where a paid subscription applies. Advisor-sponsored, demo, or firm access may follow different onboarding arrangements confirmed with Klaris.
+                Paid Klaris access may be offered through a direct family arrangement, adviser-led rollout, firm pilot, or other agreed onboarding model. The applicable fee structure is confirmed privately before paid access begins.
               </p>
             </section>
 
@@ -107,10 +107,10 @@ export default function RefundPolicyPage() {
                 2. Cancellation
               </h2>
               <p className="text-foreground/80 mb-4">
-                If you hold a direct paid Klaris subscription, you may cancel it from your account billing settings. Cancellation takes effect at the end of your current billing period.
+                If you hold a paid Klaris access arrangement, you may request cancellation at any time. Cancellation timing depends on the arrangement confirmed during onboarding.
               </p>
               <p className="text-foreground/80">
-                You will retain paid access until the end of the paid period, unless access is suspended or terminated under the Terms of Service.
+                Where a paid period has already commenced, access generally continues until the end of that period unless access is suspended or terminated under the Terms of Service.
               </p>
             </section>
 
@@ -120,14 +120,14 @@ export default function RefundPolicyPage() {
                 3. No Refunds for Partial Months
               </h2>
               <p className="text-foreground/80 mb-4">
-                We do not provide refunds for partial months of direct subscriptions. If you cancel mid-period, you will retain access until the end of that billing cycle and will not be charged for the following period.
+                We do not generally provide refunds for part-used paid periods. If you cancel mid-period, any remaining access and future charges will be handled according to the arrangement confirmed with you.
               </p>
               <div className="bg-blue-50 border border-blue-200 rounded-xl p-6">
                 <h4 className="text-lg font-semibold text-blue-800 mb-2">
                   Summary
                 </h4>
                 <p className="text-blue-700">
-                  Direct subscribers can cancel anytime. Keep paid access until the end of the billing cycle. No charge for the next period.
+                  Paid access can be cancelled by request. We will confirm the final access date and any remaining payment position with you.
                 </p>
               </div>
             </section>
@@ -138,7 +138,7 @@ export default function RefundPolicyPage() {
                 4. Price Changes
               </h2>
               <p className="text-foreground/80 mb-4">
-                For direct paid subscriptions, we will provide at least 30 days&apos; written notice before any price increase. If you do not accept the new price, you may cancel before the increase takes effect without charge.
+                For paid access arrangements, we will provide at least 30 days&apos; written notice before any material price increase. If you do not accept the new price, you may cancel before the increase takes effect.
               </p>
             </section>
 
@@ -158,7 +158,7 @@ export default function RefundPolicyPage() {
                 within 14 days of the charge date and we will investigate.
               </p>
               <p className="text-foreground/80">
-                Refunds for billing errors are at our discretion.
+                Refunds for payment errors are assessed at our discretion.
               </p>
             </section>
 

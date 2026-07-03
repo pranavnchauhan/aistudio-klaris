@@ -120,9 +120,7 @@ export default function CookiePolicyPage() {
                 Analytics Cookies
               </h3>
               <p className="text-foreground/80 mb-4">
-                We use Google Analytics to collect anonymised data about how our
-                website is used. Analytics cookies are only set if you accept
-                them via our consent banner.
+                We may use analytics tools to collect aggregated information about how our website is used. Analytics cookies are only set if you accept them via our consent banner.
               </p>
 
               <h3 className="text-lg font-semibold text-primary mb-3">
@@ -140,36 +138,20 @@ export default function CookiePolicyPage() {
                 3. Third-Party Cookies
               </h2>
               <p className="text-foreground/80 mb-4">
-                The following third-party services may set cookies when you use
-                our platform:
+                Trusted service providers may set or use cookies for analytics,
+                payments, email delivery, or core website functionality. We avoid
+                naming specific providers publicly so we do not disclose operational
+                implementation details on the website.
               </p>
               <ul className="list-disc pl-6 space-y-2 text-foreground/80">
                 <li>
-                  <strong>Google Analytics</strong> - Anonymised usage
-                  data.{" "}
-                  <a
-                    href="https://policies.google.com/privacy"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-accent hover:underline"
-                  >
-                    Google Privacy Policy
-                  </a>
+                  <strong>Analytics</strong> - Helps us understand website usage when you consent.
                 </li>
                 <li>
-                  <strong>Stripe</strong> - Payment processing.{" "}
-                  <a
-                    href="https://stripe.com/au/privacy"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-accent hover:underline"
-                  >
-                    Stripe Privacy Policy
-                  </a>
+                  <strong>Payments</strong> - Supports paid access arrangements where applicable.
                 </li>
                 <li>
-                  <strong>Resend</strong> - Email delivery. Resend
-                  does not set cookies on the public website.
+                  <strong>Communications</strong> - Supports account, support, and security messages.
                 </li>
               </ul>
             </section>

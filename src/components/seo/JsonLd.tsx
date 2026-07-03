@@ -16,10 +16,10 @@ export default function JsonLd() {
           "Document ownership structures",
           "Visualize financial relationships",
           "Track trusts, SMSFs, and companies",
-          "Advisor collaboration",
+          "Adviser collaboration",
           "Linked document storage",
           "Approval-based account access",
-          "SSL/TLS encryption in transit",
+          "Privacy-led information handling",
         ],
       },
       {

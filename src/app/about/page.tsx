@@ -208,10 +208,7 @@ export default function AboutPage() {
                 The Klaris Solution
               </h3>
               <p className="text-muted-foreground">
-                Klaris maps ownership structures, assets, loans, and supporting documents
-                in one interactive workspace. Clients can invite trusted advisors with
-                view-only or full-access permissions, while admin approval and audit
-                controls support a controlled rollout.
+                Klaris brings ownership structures, assets, loans, and supporting documents into one clear workspace. Families and advisers can work from the same source of truth, making reviews, succession discussions, and major decisions easier to navigate.
               </p>
             </div>
           </div>
@@ -246,9 +243,7 @@ export default function AboutPage() {
                 Security First
               </h3>
               <p className="text-sm text-muted-foreground text-center">
-                Sensitive identifiers such as ABN, ACN, and bank details are encrypted,
-                advisor access is permission-based, and admin actions are protected
-                through role checks and audit logs.
+                Sensitive wealth information is handled with privacy-led controls, careful access management, and operational safeguards designed for Australian families and their advisers.
               </p>
             </div>
             <div className="text-center space-y-4">

@@ -360,7 +360,7 @@ export default function ForAccountantsPage() {
                 Australian-region provisioning
               </h3>
               <p className="text-sm text-muted-foreground text-center">
-                Production application data is provisioned in the Australian region. Specific providers and subprocessors are governed by our policies and service terms, supporting Australian privacy and data-residency expectations.
+                Klaris is operated for Australian client groups, with data handling and onboarding processes designed around Australian privacy and professional-services expectations.
               </p>
             </div>
             <div className="text-center space-y-4">
@@ -371,7 +371,7 @@ export default function ForAccountantsPage() {
                 Encryption as standard
               </h3>
               <p className="text-sm text-muted-foreground text-center">
-                All connections to Klaris are encrypted in transit with modern TLS. Sensitive identifiers such as ABN, ACN, and bank details are protected with field-level encryption, alongside managed platform storage controls.
+                Klaris is designed to protect sensitive family wealth information with secure handling, careful access controls, and privacy-led operational safeguards.
               </p>
             </div>
             <div className="text-center space-y-4">
@@ -432,8 +432,7 @@ export default function ForAccountantsPage() {
                 trusted advisors where appropriate.
               </p>
               <p className="text-muted-foreground">
-                Clients can invite advisors with view-only or full-access permissions,
-                and advisor-sponsored client accounts are supported for firm-led rollouts.
+                Clients, accountants, and advisers can work from the same governed structure record, with access planned around the family relationship and your firm’s operating model.
               </p>
             </div>
 
