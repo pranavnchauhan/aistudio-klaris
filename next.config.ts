@@ -18,7 +18,7 @@ const nextConfig: NextConfig = {
       "style-src 'self' 'unsafe-inline'",
       "font-src 'self'",
       "img-src 'self' data: blob: https://www.googletagmanager.com",
-      "connect-src 'self' https://app.klaris.com.au https://www.google-analytics.com https://analytics.google.com https://www.googletagmanager.com",
+      "connect-src 'self' https://app.klaris.com.au https://www.google-analytics.com https://analytics.google.com https://www.googletagmanager.com https://www.google.com",
       "frame-src https://www.googletagmanager.com https://www.youtube.com",
       "frame-ancestors 'none'",
       "object-src 'none'",
