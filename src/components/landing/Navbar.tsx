@@ -174,9 +174,7 @@ const Navbar = () => {
             </Button>
             <Button asChild size="sm">
               <a
-                href="https://cal.com/kd-pc/klaris-partnership-discussion"
-                target="_blank"
-                rel="noopener noreferrer"
+                href="/book-demo"
                 aria-label="Book a demo with Klaris"
               >
                 Book a Demo
@@ -290,9 +288,7 @@ const Navbar = () => {
               </Button>
               <Button asChild className="w-full">
                 <a
-                  href="https://cal.com/kd-pc/klaris-partnership-discussion"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  href="/book-demo"
                   aria-label="Book a demo with Klaris"
                 >
                   Book a Demo

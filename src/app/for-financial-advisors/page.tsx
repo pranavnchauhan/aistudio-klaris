@@ -38,7 +38,7 @@ export const metadata: Metadata = {
   },
 };
 
-const BOOKING_URL = "https://cal.com/kd-pc/klaris-partnership-discussion";
+const BOOKING_URL = "/book-demo";
 
 interface FaqItem {
   question: string;
@@ -152,8 +152,6 @@ export default function ForFinancialAdvisorsPage() {
             <Button size="lg" asChild>
               <a
                 href={BOOKING_URL}
-                target="_blank"
-                rel="noopener noreferrer"
               >
                 <Calendar className="mr-2 h-4 w-4" />
                 Book a guided demo for your practice
@@ -536,8 +534,6 @@ export default function ForFinancialAdvisorsPage() {
           <Button size="lg" variant="secondary" asChild>
             <a
               href={BOOKING_URL}
-              target="_blank"
-              rel="noopener noreferrer"
             >
               <Calendar className="mr-2 h-4 w-4" />
               Book a guided demo for your practice

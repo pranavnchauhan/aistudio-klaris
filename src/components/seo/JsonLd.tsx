@@ -268,7 +268,7 @@ export default function JsonLd() {
             position: 1,
             name: "Book a Demo",
             text: "Schedule a personalised demo with our team to see Klaris in action and find the right approach for your family or firm.",
-            url: "https://cal.com/kd-pc/klaris-partnership-discussion",
+            url: "https://klaris.com.au/book-demo",
           },
           {
             "@type": "HowToStep",

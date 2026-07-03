@@ -357,9 +357,7 @@ export default function FaqPage() {
           </p>
           <Button size="lg" variant="secondary" asChild>
             <a
-              href="https://cal.com/kd-pc/klaris-partnership-discussion"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="/book-demo"
             >
               <Calendar className="mr-2 h-4 w-4" />
               Book a Demo

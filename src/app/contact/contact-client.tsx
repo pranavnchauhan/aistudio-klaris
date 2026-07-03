@@ -268,11 +268,7 @@ export default function ContactClient() {
                     </p>
                   </div>
                   <Button variant="outline" className="w-full" asChild>
-                    <a
-                      href="https://cal.com/kd-pc/klaris-partnership-discussion"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
+                    <a href="/book-demo">
                       <Calendar className="mr-2 h-4 w-4" />
                       Book a Meeting
                     </a>
