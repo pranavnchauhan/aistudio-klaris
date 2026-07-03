@@ -66,7 +66,7 @@ export default function BookDemoClient() {
         throw new Error("Failed to send request. Please try again.");
       }
 
-      router.push("/contact/success");
+      router.push("/book-demo/thanks");
     } catch (err) {
       setError(err instanceof Error ? err.message : "Something went wrong. Please try again.");
       setIsSubmitting(false);
