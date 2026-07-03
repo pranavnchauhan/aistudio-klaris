@@ -250,7 +250,7 @@ export default function JsonLd() {
         "@type": "HowTo",
         name: "How to Get Started with Klaris",
         description:
-          "A simple three-step process to start visualizing your wealth structures with Klaris.",
+          "A simple three-step process for Australian families and their advisers to bring complex wealth structures into one clear view with Klaris.",
         totalTime: "PT10M",
         tool: [
           {
@@ -267,21 +267,21 @@ export default function JsonLd() {
             "@type": "HowToStep",
             position: 1,
             name: "Book a Demo",
-            text: "Schedule a personalised demo with our team to see Klaris in action and find the right plan for your needs.",
+            text: "Schedule a personalised demo with our team to see Klaris in action and find the right approach for your family or firm.",
             url: "https://cal.com/kd-pc/klaris-partnership-discussion",
           },
           {
             "@type": "HowToStep",
             position: 2,
-            name: "Access Your Vault",
-            text: "After signup, you'll be instantly redirected to the Klaris application at app.klaris.com.au where your secure vault awaits.",
+            name: "Get Set Up",
+            text: "We confirm the right access and onboarding approach for your family, advisers, or firm before you start.",
             url: "https://app.klaris.com.au",
           },
           {
             "@type": "HowToStep",
             position: 3,
             name: "Map Your Wealth",
-            text: "Start building KRSP (Key Relationship Structure Platform) diagrams to visualize how your trusts, companies, properties, and assets connect.",
+            text: "Build one clear picture of how your trusts, companies, SMSFs, properties, loans, and documents connect, ready for review, succession, and family decisions.",
             url: "https://app.klaris.com.au",
           },
         ],
