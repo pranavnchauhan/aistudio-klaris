@@ -33,3 +33,26 @@ yarn-error.log*
 next-env.d.ts
 audit-pages.mjs
 audit-screenshots/
+
+# === KD Websites Project — secrets & IP (do not remove) ===
+.env
+.env.*
+!.env.example
+!.env*.example
+.vercel
+*.pem
+*.p12
+*.pfx
+*credentials*
+*service-account*
+*-key.json
+*.json.key
+
+# Agent / internal agency notes (IP)
+HANDOFF.md
+CLAUDE.md
+AGENTS.md
+
+# Local tooling
+.DS_Store
+.playwright-mcp/
