@@ -13,4 +13,6 @@ Allow: /
 User-agent: Google-Extended
 Allow: /
 
+LLMS: https://klaris.com.au/llms.txt
+
 Sitemap: https://klaris.com.au/sitemap.xml
