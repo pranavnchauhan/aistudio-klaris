@@ -1,0 +1,363 @@
+{
+  "domain": "klaris.com.au",
+  "created_date": "2026-08-03",
+  "tier": "professional",
+  "scope": "full",
+  "total_tasks": 34,
+  "months": [
+    {
+      "month": 1,
+      "theme": "Technical Foundation & Critical Fixes",
+      "tasks": [
+        {
+          "id": "m1-001",
+          "task": "Fix sitemap.xml 500 error (Vercel serverless route returning 403/500 instead of XML)",
+          "category": "technical",
+          "severity": "critical",
+          "source_issue_id": "tech-001",
+          "status": "pending",
+          "completed_date": null,
+          "notes": "Sitemap returns 500 on production. Check next-sitemap or custom route handler."
+        },
+        {
+          "id": "m1-002",
+          "task": "Fix H1 parsing issue on homepage — server-rendered HTML contains zero <h1> tags despite visible H1 in rendered page",
+          "category": "technical",
+          "severity": "critical",
+          "source_issue_id": "tech-002",
+          "status": "pending",
+          "completed_date": null,
+          "notes": "All 8 other pages have exactly 1 H1. Homepage likely uses client-side React for hero text. Check if H1 is inside a React component that renders post-hydration."
+        },
+        {
+          "id": "m1-003",
+          "task": "Verify JSON-LD renders in production HTML (found in source for 9 pages, but curl on live homepage shows 0 blocks — likely hydration-dependent)",
+          "category": "schema",
+          "severity": "high",
+          "source_issue_id": "tech-003",
+          "status": "pending",
+          "completed_date": null,
+          "notes": "JSON-LD exists in source code but not in curl output. Confirm Google Search Console sees structured data."
+        },
+        {
+          "id": "m1-004",
+          "task": "Create /sitemap.xml route handler or add next-sitemap config",
+          "category": "technical",
+          "severity": "critical",
+          "source_issue_id": "tech-001",
+          "status": "pending",
+          "completed_date": null,
+          "notes": "Robots.txt references sitemap at https://klaris.com.au/sitemap.xml but it 500s."
+        },
+        {
+          "id": "m1-005",
+          "task": "Ensure canonical tags render on all 15 pages (currently only homepage has one)",
+          "category": "on-page",
+          "severity": "high",
+          "source_issue_id": "onpage-001",
+          "status": "pending",
+          "completed_date": null,
+          "notes": "Check next.config.ts or page-level generateMetadata for canonical output."
+        },
+        {
+          "id": "m1-006",
+          "task": "Add Organization JSON-LD schema to homepage",
+          "category": "schema",
+          "severity": "high",
+          "source_issue_id": "schema-001",
+          "status": "pending",
+          "completed_date": null,
+          "notes": "Homepage has no structured data in production. Add Organization + WebSite + SoftwareApplication schema."
+        },
+        {
+          "id": "m1-007",
+          "task": "Add WebSite JSON-LD with SearchAction for sitelinks search box",
+          "category": "schema",
+          "severity": "medium",
+          "source_issue_id": "schema-002",
+          "status": "pending",
+          "completed_date": null,
+          "notes": "Supports Google sitelinks search box rich result."
+        },
+        {
+          "id": "m1-008",
+          "task": "Add BreadcrumbList JSON-LD across all pages",
+          "category": "schema",
+          "severity": "medium",
+          "source_issue_id": "schema-003",
+          "status": "pending",
+          "completed_date": null,
+          "notes": "Improve SERP appearance with breadcrumb trails."
+        }
+      ]
+    },
+    {
+      "month": 2,
+      "theme": "On-Page Optimisation & Content Depth",
+      "tasks": [
+        {
+          "id": "m2-001",
+          "task": "Audit and fix any pages with missing or duplicate meta descriptions",
+          "category": "on-page",
+          "severity": "high",
+          "source_issue_id": "onpage-002",
+          "status": "pending",
+          "completed_date": null,
+          "notes": "Verified: /about, /for-families, /for-accountants, /for-financial-advisors, /contact, /book-demo, /blog, /faq all have meta descriptions. /privacy, /terms, /disclaimer, /cookie-policy, /refund-policy, /security need checking."
+        },
+        {
+          "id": "m2-002",
+          "task": "Ensure every image has descriptive alt text (0 images without alt on homepage, but verify across all pages)",
+          "category": "on-page",
+          "severity": "medium",
+          "source_issue_id": "onpage-003",
+          "status": "pending",
+          "completed_date": null,
+          "notes": "Homepage has no imgs without alt, but need to check remaining 14 pages."
+        },
+        {
+          "id": "m2-003",
+          "task": "Add FAQPage JSON-LD to /faq page (currently no structured data on that page)",
+          "category": "schema",
+          "severity": "high",
+          "source_issue_id": "schema-004",
+          "status": "pending",
+          "completed_date": null,
+          "notes": "FAQ page has 15+ questions — perfect candidate for FAQ rich snippets."
+        },
+        {
+          "id": "m2-004",
+          "task": "Add Article JSON-LD to blog posts",
+          "category": "schema",
+          "severity": "medium",
+          "source_issue_id": "schema-005",
+          "status": "pending",
+          "completed_date": null,
+          "notes": "Blog is empty or near-empty. When posts exist, add Article schema."
+        },
+        {
+          "id": "m2-005",
+          "task": "Internal linking audit: ensure every page is reachable within 3 clicks from homepage",
+          "category": "on-page",
+          "severity": "medium",
+          "source_issue_id": "onpage-004",
+          "status": "pending",
+          "completed_date": null,
+          "notes": "Nav has Solutions dropdown with 3 audience pages. Legal pages in footer. Blog posts need internal links."
+        },
+        {
+          "id": "m2-006",
+          "task": "Add speakable schema to key sections (answer-first blocks)",
+          "category": "schema",
+          "severity": "low",
+          "source_issue_id": "schema-006",
+          "status": "pending",
+          "completed_date": null,
+          "notes": "For voice search / AI Overview extraction."
+        }
+      ]
+    },
+    {
+      "month": 3,
+      "theme": "Content & GEO-Lite (AI Search Visibility)",
+      "tasks": [
+        {
+          "id": "m3-001",
+          "task": "AI citability audit on /for-families, /for-accountants, /for-financial-advisors, /faq",
+          "category": "geo",
+          "severity": "high",
+          "source_issue_id": "geo-001",
+          "status": "pending",
+          "completed_date": null,
+          "notes": "Score each page 0-100 on extractability. Rewrite blocks <60 for answer-first structure."
+        },
+        {
+          "id": "m3-002",
+          "task": "Add definition boxes to key pages: 'What is KRSP?', 'What is wealth structure mapping?'",
+          "category": "geo",
+          "severity": "high",
+          "source_issue_id": "geo-002",
+          "status": "pending",
+          "completed_date": null,
+          "notes": "AIO + ChatGPT prefer definition patterns. Target: 'X is...' openings."
+        },
+        {
+          "id": "m3-003",
+          "task": "Add publication and last-updated dates to blog posts and key pages",
+          "category": "geo",
+          "severity": "medium",
+          "source_issue_id": "geo-003",
+          "status": "pending",
+          "completed_date": null,
+          "notes": "AI systems weight recency. Add datePublished + dateModified."
+        },
+        {
+          "id": "m3-004",
+          "task": "Add author byline with credentials to blog posts (E-E-A-T signal)",
+          "category": "geo",
+          "severity": "medium",
+          "source_issue_id": "geo-004",
+          "status": "pending",
+          "completed_date": null,
+          "notes": "Financial content needs named, credentialed authors."
+        },
+        {
+          "id": "m3-005",
+          "task": "Platform optimizer: score 0-100 for Google AIO, ChatGPT, Perplexity, Gemini, Copilot",
+          "category": "geo",
+          "severity": "high",
+          "source_issue_id": "geo-005",
+          "status": "pending",
+          "completed_date": null,
+          "notes": "Baseline per-platform scores. Identify quick wins."
+        },
+        {
+          "id": "m3-006",
+          "task": "Ensure llms.txt is linked from robots.txt",
+          "category": "geo",
+          "severity": "low",
+          "source_issue_id": "geo-006",
+          "status": "pending",
+          "completed_date": null,
+          "notes": "llms.txt exists but not referenced in robots.txt. Add: 'LLMS: https://klaris.com.au/llms.txt'"
+        }
+      ]
+    },
+    {
+      "month": 4,
+      "theme": "Backlinks & Authority",
+      "tasks": [
+        {
+          "id": "m4-001",
+          "task": "Competitor backlink analysis: identify link opportunities from financial advisor directories, accounting associations, AFSL holder lists",
+          "category": "backlinks",
+          "severity": "high",
+          "source_issue_id": "links-001",
+          "status": "pending",
+          "completed_date": null,
+          "notes": "Target: CPA Australia, FAAA, SMSF Association, accounting firm partner pages."
+        },
+        {
+          "id": "m4-002",
+          "task": "Submit Klaris to relevant Australian fintech/wealthtech directories",
+          "category": "backlinks",
+          "severity": "high",
+          "source_issue_id": "links-002",
+          "status": "pending",
+          "completed_date": null,
+          "notes": "Target: FinTech Australia, WealthTech platforms, AFSL holder directories."
+        },
+        {
+          "id": "m4-003",
+          "task": "Create linkable asset: 'Australian Wealth Structure Statistics 2026' or 'HNW Family Wealth Report'",
+          "category": "backlinks",
+          "severity": "medium",
+          "source_issue_id": "links-003",
+          "status": "pending",
+          "completed_date": null,
+          "notes": "Original research attracts links from financial media and advisor blogs."
+        },
+        {
+          "id": "m4-004",
+          "task": "Outreach to 5 Australian financial planning publications for guest articles",
+          "category": "backlinks",
+          "severity": "medium",
+          "source_issue_id": "links-004",
+          "status": "pending",
+          "completed_date": null,
+          "notes": "Target: Money Management, IFA, Financial Standard, Professional Planner."
+        }
+      ]
+    },
+    {
+      "month": 5,
+      "theme": "GEO Deep & Advanced Schema",
+      "tasks": [
+        {
+          "id": "m5-001",
+          "task": "Re-run AI citability after M3 rewrites — target 20%+ improvement",
+          "category": "geo",
+          "severity": "high",
+          "source_issue_id": "geo-007",
+          "status": "pending",
+          "completed_date": null,
+          "notes": "Measure citability coverage (% blocks >70)."
+        },
+        {
+          "id": "m5-002",
+          "task": "Add sameAs schema linking to LinkedIn, YouTube, and any Wikipedia/Wikidata entries",
+          "category": "schema",
+          "severity": "medium",
+          "source_issue_id": "schema-007",
+          "status": "pending",
+          "completed_date": null,
+          "notes": "Entity recognition boost for AI platforms."
+        },
+        {
+          "id": "m5-003",
+          "task": "Create YouTube video: 'What is wealth structure mapping?' with transcript",
+          "category": "geo",
+          "severity": "medium",
+          "source_issue_id": "geo-008",
+          "status": "pending",
+          "completed_date": null,
+          "notes": "Gemini heavily weights YouTube. Transcript = extractable content."
+        },
+        {
+          "id": "m5-004",
+          "task": "Test llm-live-test for 3 queries: 'wealth structure software Australia', 'KRSP framework', 'Klaris'",
+          "category": "geo",
+          "severity": "high",
+          "source_issue_id": "geo-009",
+          "status": "pending",
+          "completed_date": null,
+          "notes": "Measure actual AI citations vs citability score."
+        }
+      ]
+    },
+    {
+      "month": 6,
+      "theme": "Refinement & Monitoring",
+      "tasks": [
+        {
+          "id": "m5-005",
+          "task": "Full re-audit vs baseline (technical, on-page, GEO)",
+          "category": "technical",
+          "severity": "high",
+          "source_issue_id": "monitor-001",
+          "status": "pending",
+          "completed_date": null,
+          "notes": "Compare against M1 baseline. Document improvements."
+        },
+        {
+          "id": "m5-006",
+          "task": "Set up monthly rank tracking for 10 target keywords",
+          "category": "keywords",
+          "severity": "medium",
+          "source_issue_id": "monitor-002",
+          "status": "pending",
+          "completed_date": null,
+          "notes": "DataForSEO or similar. Track: 'wealth structure software', 'family trust mapping tool', 'SMSF structure software', etc."
+        },
+        {
+          "id": "m5-007",
+          "task": "Content freshness audit: update any page older than 90 days",
+          "category": "content",
+          "severity": "medium",
+          "source_issue_id": "monitor-003",
+          "status": "pending",
+          "completed_date": null,
+          "notes": "Google favours fresh content. Update statistics, examples, dates."
+        },
+        {
+          "id": "m5-008",
+          "task": "Quarterly client report (comprehensive)",
+          "category": "reporting",
+          "severity": "high",
+          "source_issue_id": "report-001",
+          "status": "pending",
+          "completed_date": null,
+          "notes": "Full SEO + GEO-lite report with progress vs baseline, next quarter plan."
+        }
+      ]
+    }
