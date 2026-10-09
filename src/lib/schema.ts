@@ -85,7 +85,8 @@ export const KLARIS_SOFTWARE = {
   ],
   // The product's maker, not its identity.
   publisher: { "@id": KRRISP_ORG_ID },
+  // Verified live: this channel exists and its videos are Klaris's own. Klaris has no
+  // LinkedIn or X page (the slugs the site used to link to, /company/klaris-au and
+  // @klaris_au, both return 404), so those are not claimed.
+  sameAs: ["https://www.youtube.com/@klarisapp"],
 } as const;
-
-/** Reference to the product, for pages that talk about Klaris itself. */
-export const KLARIS_SOFTWARE_REF = { "@id": KLARIS_SOFTWARE_ID } as const;
