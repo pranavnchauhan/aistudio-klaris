@@ -218,4 +218,4 @@ The bigger opportunity is **AI search visibility**. Klaris has a well-structured
 - **Quarterly comprehensive report** — Full re-audit, next quarter plan
 - **Ad-hoc alerts** — Critical issues (sitemap down, rankings drop >10 positions)
 
-**Contact:** Pranav Chauhan — pranav@krrispdigital.com.au — +61 483 966 111
+**Contact:** Pranav Chauhan — pranav@krrispdigital.com.au — +61 2 5300 0300
