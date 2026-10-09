@@ -15,6 +15,7 @@
 //      an earlier version pointed at linkedin.com/company/klaris-au and x.com/klaris_au,
 //      both of which return 404, and a dead sameAs is worse than none.
 import { KLARIS_EMAIL, KLARIS_PHONE_DISPLAY, KLARIS_SITE_URL } from "@/lib/constants";
+import { KLARIS_SOCIALS } from "@/lib/social";
 
 export const KRRISP_ORG_ID = "https://krrispdigital.com.au/#organization";
 export const KLARIS_SOFTWARE_ID = `${KLARIS_SITE_URL}/#software`;
@@ -85,8 +86,8 @@ export const KLARIS_SOFTWARE = {
   ],
   // The product's maker, not its identity.
   publisher: { "@id": KRRISP_ORG_ID },
-  // Verified live: this channel exists and its videos are Klaris's own. Klaris has no
-  // LinkedIn or X page (the slugs the site used to link to, /company/klaris-au and
-  // @klaris_au, both return 404), so those are not claimed.
-  sameAs: ["https://www.youtube.com/@klarisapp"],
+  // Klaris's own accounts, all verified live. Single-sourced from lib/social.ts so the
+  // schema and the rendered footer cannot drift apart. Klaris has no X account: the slug
+  // the site used to link, @klaris_au, returns 404.
+  sameAs: KLARIS_SOCIALS.map((social) => social.href),
 } as const;
