@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { KRRISP_ORG_ID } from "@/lib/schema";
 import Link from "next/link";
 import {
   Calendar,
@@ -96,11 +97,7 @@ export default function ForFinancialAdvisorsPage() {
     description:
       "Klaris is a wealth visibility platform for Australian financial advisors. Map SMSF structures, family trusts, and complex client wealth in one clear view. Built for high net worth advisory practices.",
     url: "https://klaris.com.au/for-financial-advisors",
-    publisher: {
-      "@type": "Organization",
-      name: "Klaris",
-      url: "https://klaris.com.au",
-    },
+    publisher: { "@id": KRRISP_ORG_ID },
     inLanguage: "en-AU",
     audience: {
       "@type": "Audience",

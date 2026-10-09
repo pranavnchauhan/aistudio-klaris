@@ -4,6 +4,7 @@ import Link from "next/link";
 import { Sparkles, MapPin, Shield, Eye, Calendar, ArrowRight } from "lucide-react";
 import GlowingIcon from "@/components/landing/GlowingIcon";
 import { Button } from "@/components/ui/button";
+import { KRRISP_ORG_ID, KLARIS_SOFTWARE_ID } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: "About",
@@ -26,31 +27,11 @@ export const metadata: Metadata = {
 export default function AboutPage() {
   const jsonLd = {
     "@context": "https://schema.org",
-    "@type": "Organization",
-    name: "Klaris",
-    url: "https://klaris.com.au",
-    logo: "https://klaris.com.au/klaris-logo.webp",
-    description:
-      "Australian wealth structure visualisation software for mapping structures, assets, loans, documents, and advisor access.",
-    founder: {
-      "@type": "Person",
-      name: "Pranav Chauhan",
-      jobTitle: "Founder & CEO",
-      url: "https://www.linkedin.com/in/pranav-chauhan-au/",
-    },
-    parentOrganization: {
-      "@type": "Organization",
-      name: "Krrisp Digital",
-      url: "https://krrispdigital.com.au",
-    },
-    areaServed: {
-      "@type": "Country",
-      name: "Australia",
-    },
-    sameAs: [
-      "https://www.linkedin.com/company/klaris-au",
-      "https://x.com/klaris_au",
-    ],
+    "@type": "AboutPage",
+    name: "About Klaris",
+    url: "https://klaris.com.au/about",
+    publisher: { "@id": KRRISP_ORG_ID },
+    mainEntity: { "@id": KLARIS_SOFTWARE_ID },
   };
 
   return (

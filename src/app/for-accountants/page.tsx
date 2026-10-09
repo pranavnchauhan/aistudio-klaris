@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { KRRISP_ORG_ID } from "@/lib/schema";
 import Link from "next/link";
 import {
   Calendar,
@@ -95,11 +96,7 @@ export default function ForAccountantsPage() {
     description:
       "Klaris is trust structure mapping software for Australian accountants. Visualise client trusts, SMSFs, companies, and inter-entity loans in one view. Built for high net worth client workflows.",
     url: "https://klaris.com.au/for-accountants",
-    publisher: {
-      "@type": "Organization",
-      name: "Klaris",
-      url: "https://klaris.com.au",
-    },
+    publisher: { "@id": KRRISP_ORG_ID },
     inLanguage: "en-AU",
     audience: {
       "@type": "Audience",

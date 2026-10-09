@@ -5,6 +5,7 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { KLARIS_EMAIL, KLARIS_PHONE_DISPLAY, KLARIS_PHONE_TEL, KLARIS_SITE_URL } from "@/lib/constants";
 
+import { KRRISP_ORG_ID } from "@/lib/schema";
 const sections = [
   { id: "access-model", label: "1. Access Model" },
   { id: "cancellation", label: "2. Cancellation" },
@@ -28,11 +29,7 @@ export default function RefundPolicyPage() {
             description:
               "Refund and cancellation policy for paid Klaris access arrangements.",
             url: `${KLARIS_SITE_URL}/refund-policy`,
-            publisher: {
-              "@type": "Organization",
-              name: "Klaris",
-              url: KLARIS_SITE_URL,
-            },
+            publisher: { "@id": KRRISP_ORG_ID },
             datePublished: "2026-04-01",
             dateModified: "2026-04-01",
             inLanguage: "en-AU",

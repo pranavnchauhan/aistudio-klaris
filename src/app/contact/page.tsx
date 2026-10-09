@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
-import { KLARIS_EMAIL, KLARIS_PHONE_DISPLAY, KLARIS_SITE_URL } from "@/lib/constants";
+import { KLARIS_SITE_URL } from "@/lib/constants";
+import { KRRISP_ORG_ID } from "@/lib/schema";
 import ContactClient from "./contact-client";
 
 export const metadata: Metadata = {
@@ -21,19 +22,9 @@ export default function ContactPage() {
     "@type": "ContactPage",
     name: "Contact Klaris",
     url: `${KLARIS_SITE_URL}/contact`,
-    mainEntity: {
-      "@type": "Organization",
-      name: "Klaris",
-      email: KLARIS_EMAIL,
-      telephone: KLARIS_PHONE_DISPLAY,
-      address: {
-        "@type": "PostalAddress",
-        addressLocality: "Bella Vista",
-        addressRegion: "NSW",
-        postalCode: "2153",
-        addressCountry: "AU",
-      },
-    },
+    // The business you are contacting, referenced by @id rather than re-declared. Its
+    // contactPoint already carries the support email, phone and address.
+    mainEntity: { "@id": KRRISP_ORG_ID },
   };
 
   return (

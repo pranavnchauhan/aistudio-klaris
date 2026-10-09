@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { KRRISP_ORG_ID } from "@/lib/schema";
 import Link from "next/link";
 import {
   Calendar,
@@ -91,11 +92,7 @@ export default function ForFamiliesPage() {
     description:
       "Klaris gives high net worth families a single, visual map of their trusts, companies, SMSFs, and assets.",
     url: "https://klaris.com.au/for-families",
-    publisher: {
-      "@type": "Organization",
-      name: "Klaris",
-      url: "https://klaris.com.au",
-    },
+    publisher: { "@id": KRRISP_ORG_ID },
     inLanguage: "en-AU",
     audience: {
       "@type": "Audience",

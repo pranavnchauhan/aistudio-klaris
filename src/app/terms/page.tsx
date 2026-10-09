@@ -3,6 +3,7 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { KLARIS_EMAIL, KLARIS_SITE_URL } from "@/lib/constants";
 
+import { KRRISP_ORG_ID } from "@/lib/schema";
 export const metadata: Metadata = {
   title: "Terms of Service",
   description:
@@ -51,11 +52,7 @@ export default function TermsPage() {
             description:
               "Legal terms for using Klaris wealth-structure record and advisor-collaboration software.",
             url: `${KLARIS_SITE_URL}/terms`,
-            publisher: {
-              "@type": "Organization",
-              name: "Klaris",
-              url: KLARIS_SITE_URL,
-            },
+            publisher: { "@id": KRRISP_ORG_ID },
             datePublished: "2024-12-16",
             dateModified: "2025-01-21",
             inLanguage: "en-AU",

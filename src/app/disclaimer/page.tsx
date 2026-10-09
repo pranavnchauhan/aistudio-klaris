@@ -5,6 +5,7 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { KLARIS_EMAIL, KLARIS_PHONE_DISPLAY, KLARIS_PHONE_TEL, KLARIS_SITE_URL } from "@/lib/constants";
 
+import { KRRISP_ORG_ID } from "@/lib/schema";
 const sections = [
   { id: "no-financial-advice", label: "1. No Financial Advice" },
   { id: "no-guarantee", label: "2. No Guarantee of Outcomes" },
@@ -28,11 +29,7 @@ export default function DisclaimerPage() {
             description:
               "Important disclaimers about Klaris wealth-structure record software. No financial, tax, or legal advice provided.",
             url: `${KLARIS_SITE_URL}/disclaimer`,
-            publisher: {
-              "@type": "Organization",
-              name: "Klaris",
-              url: KLARIS_SITE_URL,
-            },
+            publisher: { "@id": KRRISP_ORG_ID },
             datePublished: "2026-04-01",
             dateModified: "2026-04-01",
             inLanguage: "en-AU",

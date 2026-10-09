@@ -3,6 +3,7 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { KLARIS_EMAIL, KLARIS_SITE_URL } from "@/lib/constants";
 
+import { KRRISP_ORG_ID } from "@/lib/schema";
 export const metadata: Metadata = {
   title: "Data Security",
   description:
@@ -46,11 +47,7 @@ export default function SecurityPage() {
             description:
               "Klaris Data Security Policy. Privacy-led controls for sensitive Australian family wealth information and adviser collaboration.",
             url: `${KLARIS_SITE_URL}/security`,
-            publisher: {
-              "@type": "Organization",
-              name: "Klaris",
-              url: KLARIS_SITE_URL,
-            },
+            publisher: { "@id": KRRISP_ORG_ID },
             datePublished: "2024-12-16",
             dateModified: "2025-01-21",
             inLanguage: "en-AU",
