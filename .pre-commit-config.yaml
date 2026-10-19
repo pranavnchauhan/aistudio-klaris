@@ -1,0 +1,14 @@
+# Pre-commit secret scan (compliance-agent backlog #128).
+# Blocks a commit that introduces a new secret, BEFORE it reaches history.
+#
+# Setup (once per machine):
+#   brew install pre-commit gitleaks
+#   pre-commit install
+#
+# Then every `git commit` runs gitleaks on the staged diff.
+
+repos:
+  - repo: https://github.com/gitleaks/gitleaks
+    rev: v8.30.1
+    hooks:
+      - id: gitleaks

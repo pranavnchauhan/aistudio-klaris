@@ -1,0 +1,12 @@
+# KD gitleaks configuration (compliance-agent backlog #128).
+# Extends default rules; add repo-specific false positives below.
+# Run locally: gitleaks detect --config .gitleaks.toml
+
+title = "KD gitleaks configuration"
+
+[extend]
+useDefault = true
+
+[allowlist]
+description = "repo-specific false positives (add paths/regexes here)"
+paths = []
