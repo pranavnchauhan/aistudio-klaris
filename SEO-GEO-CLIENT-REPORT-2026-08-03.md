@@ -1,4 +1,4 @@
-# Klaris — SEO Full Baseline Report
+# Klaris - SEO Full Baseline Report
 **Date:** 2026-08-03 | **Prepared by:** Krrisp Digital | **Scope:** SEO Full (includes GEO-lite)
 
 ---
@@ -7,9 +7,9 @@
 
 Klaris has a strong technical foundation with HTTPS, HSTS, CSP, and good security headers. The site is fast, mobile-friendly, and has clean URL structure. However, **two critical issues are blocking SEO performance**: a broken sitemap.xml (500 error) and a homepage H1 that doesn't render in server-side HTML. These are fixable within days.
 
-The bigger opportunity is **AI search visibility**. Klaris has a well-structured llms.txt (rare — fewer than 5% of sites have one) and good answer-first content on audience pages. With targeted citability rewrites and schema expansion, Klaris can capture AI Overview citations for wealth-structure queries ahead of competitors.
+The bigger opportunity is **AI search visibility**. Klaris has a well-structured llms.txt (rare, fewer than 5% of sites have one) and good answer-first content on audience pages. With targeted citability rewrites and schema expansion, Klaris can capture AI Overview citations for wealth-structure queries ahead of competitors.
 
-**Bottom line:** Fix the sitemap and H1 this week. The GEO opportunity is real and time-sensitive — AI platforms are forming citation habits now.
+**Bottom line:** Fix the sitemap and H1 this week. The GEO opportunity is real and time-sensitive, AI platforms are forming citation habits now.
 
 ---
 
@@ -18,7 +18,7 @@ The bigger opportunity is **AI search visibility**. Klaris has a well-structured
 | Check | Score | Status | Finding |
 |-------|-------|--------|---------|
 | Robots.txt | 15/15 | 🟢 Pass | Valid, references sitemap, allows AI crawlers (GPTBot, ClaudeBot, PerplexityBot, Google-Extended) |
-| XML Sitemap | 0/10 | 🔴 Critical | **Returns 500 error** — blocking Google from indexing all pages |
+| XML Sitemap | 0/10 | 🔴 Critical | **Returns 500 error**, blocking Google from indexing all pages |
 | HTTPS & Security | 10/10 | 🟢 Pass | HTTPS enforced, HSTS preload, upgrade-insecure-requests |
 | Redirect Chains | 15/15 | 🟢 Pass | No chains found on 6 key paths |
 | Broken Links | 20/20 | 🟢 Pass | All 15 pages return 200 |
@@ -28,13 +28,13 @@ The bigger opportunity is **AI search visibility**. Klaris has a well-structured
 
 ### Critical Fixes (This Week)
 
-1. **Sitemap.xml 500 error** — Vercel route is broken. Check `src/app/sitemap.ts` or add `next-sitemap` config.
-2. **Homepage H1 missing in SSR HTML** — The H1 "Structure Your Wealth. Secure Your Legacy." is not in the server-rendered HTML. All other pages have exactly 1 H1. This suggests the homepage hero is client-side rendered. Google may not see the H1.
+1. **Sitemap.xml 500 error**, Vercel route is broken. Check `src/app/sitemap.ts` or add `next-sitemap` config.
+2. **Homepage H1 missing in SSR HTML**, The H1 "Structure Your Wealth. Secure Your Legacy." is not in the server-rendered HTML. All other pages have exactly 1 H1. This suggests the homepage hero is client-side rendered. Google may not see the H1.
 
 ### High Priority
 
-3. **Canonical tags** — Only homepage has one. Add canonicals to all 15 pages via `generateMetadata`.
-4. **JSON-LD in production** — Source code has JSON-LD for 9 pages, but curl on live homepage shows 0 blocks. Verify Google Search Console sees structured data.
+3. **Canonical tags**, Only homepage has one. Add canonicals to all 15 pages via `generateMetadata`.
+4. **JSON-LD in production**, Source code has JSON-LD for 9 pages, but curl on live homepage shows 0 blocks. Verify Google Search Console sees structured data.
 
 ---
 
@@ -55,7 +55,7 @@ The bigger opportunity is **AI search visibility**. Klaris has a well-structured
 
 | Page | JSON-LD Present | Type |
 |------|-----------------|------|
-| Homepage | ❌ Not in production HTML | — |
+| Homepage | ❌ Not in production HTML | - |
 | /about | ✅ Yes | Organization |
 | /contact | ✅ Yes | ContactPage |
 | /faq | ✅ Yes | FAQPage |
@@ -93,12 +93,12 @@ The bigger opportunity is **AI search visibility**. Klaris has a well-structured
 ### AI Citability (Content Structure)
 
 **Strong pages (answer-first, self-contained blocks):**
-- `/for-families` — Good question-based headings, direct answers
-- `/faq` — 15+ Q&A pairs, excellent for AIO extraction
+- `/for-families`, Good question-based headings, direct answers
+- `/faq`, 15+ Q&A pairs, excellent for AIO extraction
 
 **Needs work:**
-- Homepage — Hero text is compelling but not structured for AI extraction
-- `/for-accountants`, `/for-financial-advisors` — Similar structure to /for-families, should score well
+- Homepage, Hero text is compelling but not structured for AI extraction
+- `/for-accountants`, `/for-financial-advisors`, Similar structure to /for-families, should score well
 
 **Quick wins:**
 1. Add definition boxes: "KRSP is..." / "Wealth structure mapping is..."
@@ -115,7 +115,7 @@ The bigger opportunity is **AI search visibility**. Klaris has a well-structured
 | Hero CTA | 🟢 Pass | "Book a Demo" button prominent |
 | Value proposition | 🟢 Pass | Clear, >20 chars |
 | CTA coverage | 🟢 Pass | Multiple CTAs throughout |
-| Form friction | 🟢 Pass | Contact form: 4 fields (name, email, subject, message) — under 5 threshold |
+| Form friction | 🟢 Pass | Contact form: 4 fields (name, email, subject, message), under 5 threshold |
 | Mobile ready | 🟢 Pass | Viewport meta present |
 
 **CTA inventory:**
@@ -188,11 +188,11 @@ The bigger opportunity is **AI search visibility**. Klaris has a well-structured
 
 ## Next Actions (This Week)
 
-1. **Fix sitemap.xml** — Check `src/app/sitemap.ts` or add `next-sitemap` config. Verify with `curl https://klaris.com.au/sitemap.xml`.
-2. **Fix homepage H1** — Ensure "Structure Your Wealth. Secure Your Legacy." renders in server HTML, not just client-side React.
-3. **Add canonical tags** — Add `alternates.canonical` to `generateMetadata` for all pages.
-4. **Add Organization schema** — Create `src/components/OrganizationSchema.tsx` and add to homepage layout.
-5. **Verify JSON-LD** — Use Google Rich Results Test on homepage and 3 key pages.
+1. **Fix sitemap.xml**, Check `src/app/sitemap.ts` or add `next-sitemap` config. Verify with `curl https://klaris.com.au/sitemap.xml`.
+2. **Fix homepage H1**, Ensure "Structure Your Wealth. Secure Your Legacy." renders in server HTML, not just client-side React.
+3. **Add canonical tags**, Add `alternates.canonical` to `generateMetadata` for all pages.
+4. **Add Organization schema**, Create `src/components/OrganizationSchema.tsx` and add to homepage layout.
+5. **Verify JSON-LD**, Use Google Rich Results Test on homepage and 3 key pages.
 
 ---
 
@@ -214,8 +214,8 @@ The bigger opportunity is **AI search visibility**. Klaris has a well-structured
 
 ## Reporting
 
-- **Monthly progress report** — 1st of each month, tracking vs this baseline
-- **Quarterly comprehensive report** — Full re-audit, next quarter plan
-- **Ad-hoc alerts** — Critical issues (sitemap down, rankings drop >10 positions)
+- **Monthly progress report**, 1st of each month, tracking vs this baseline
+- **Quarterly comprehensive report**, Full re-audit, next quarter plan
+- **Ad-hoc alerts**, Critical issues (sitemap down, rankings drop >10 positions)
 
-**Contact:** Pranav Chauhan — pranav@krrispdigital.com.au — +61 2 5300 0300
+**Contact:** Pranav Chauhan, pranav@krrispdigital.com.au, +61 2 5300 0300
