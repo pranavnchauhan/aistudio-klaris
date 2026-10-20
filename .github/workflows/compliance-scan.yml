@@ -3,8 +3,8 @@ name: compliance-scan
 # Secret + dependency scanning (compliance-agent backlog #128).
 # - gitleaks: detect secrets in the working tree + git history (every push).
 # - trufflehog: detect + verify secrets across history (every push).
-# - trivy: dependency CVE scan (every push + weekly, so a new CVE
-#   surfaces even when no commit lands).
+# - trivy: dependency CVE scan (every push + weekly, so a new CVE surfaces
+#   even when no commit lands).
 
 on:
   push:
